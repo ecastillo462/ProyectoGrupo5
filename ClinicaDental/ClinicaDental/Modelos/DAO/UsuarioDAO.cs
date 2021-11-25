@@ -1,5 +1,7 @@
-﻿using System;
+﻿using ClinicaDental.Modelos.Entidades;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -10,14 +12,14 @@ namespace ClinicaDental.Modelos.DAO
     public class UsuarioDAO: Conexion
     {
         SqlCommand comando = new SqlCommand();
-/*
+
         public bool ValidarUsuario(Usuario user)
         {
             bool valido = false;
             try
             {
                 StringBuilder sql = new StringBuilder();
-                sql.Append(" SELECT 1 FROM USUARIO WHERE EMAIL = @Email AND CLAVE = @Clave;");
+                sql.Append(" SELECT 1 FROM USUARIOS WHERE EMAIL = @Email AND CLAVE = @Clave;");
 
                 comando.Connection = MiConexion;
                 MiConexion.Open();
@@ -29,28 +31,12 @@ namespace ClinicaDental.Modelos.DAO
             }
             catch (Exception)
             {
+
+
             }
             return valido;
-        }*/
-
-        public bool ProbarConexion()
-        {
-            bool conecto = false; 
-            try
-            {
-                comando.Connection = MiConexion;
-                MiConexion.Open();
-                MiConexion.Close();
-                conecto = true; 
-            }
-            catch (Exception)
-            {
-                conecto = false; 
-                
-            }
-
-            return conecto; 
         }
+
 
     }
 }
