@@ -28,6 +28,10 @@ namespace ClinicaDental.Vistas
                 vistaClientes.FormClosed += Vista_FormClosed;
                 vistaClientes.Show();
             }
+            else
+            {
+                vistaClientes.Activate();
+            }
         }
 
         private void Vista_FormClosed(object sender, FormClosedEventArgs e)
