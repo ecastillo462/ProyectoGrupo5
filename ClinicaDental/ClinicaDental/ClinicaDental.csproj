@@ -62,6 +62,7 @@
     <Compile Include="Modelos\DAO\Conexion.cs" />
     <Compile Include="Modelos\DAO\UsuarioDAO.cs" />
     <Compile Include="Modelos\Entidades\Cliente.cs" />
+    <Compile Include="Modelos\Entidades\Servicios.cs" />
     <Compile Include="Modelos\Entidades\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,6 +77,12 @@
     </Compile>
     <Compile Include="Vistas\ConsultasView.Designer.cs">
       <DependentUpon>ConsultasView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FacturaView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FacturaView.Designer.cs">
+      <DependentUpon>FacturaView.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\LoginView.cs">
       <SubType>Form</SubType>
@@ -95,6 +102,12 @@
     <Compile Include="Vistas\ServiciosView.Designer.cs">
       <DependentUpon>ServiciosView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\UsuariosView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\UsuariosView.Designer.cs">
+      <DependentUpon>UsuariosView.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -105,6 +118,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Vistas\ClientesView.resx">
+      <DependentUpon>ClientesView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\ConsultasView.resx">
       <DependentUpon>ConsultasView.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,6 +129,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\MenuView.resx">
       <DependentUpon>MenuView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ServiciosView.resx">
+      <DependentUpon>ServiciosView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\UsuariosView.resx">
+      <DependentUpon>UsuariosView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

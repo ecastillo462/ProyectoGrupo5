@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ClinicaDental.Vistas
 {
-    public partial class Usuarios : Form
+    public partial class UsuariosView : Form
     {
-        public Usuarios()
+        public UsuariosView()
         {
             InitializeComponent();
         }

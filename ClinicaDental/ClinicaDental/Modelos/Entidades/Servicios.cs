@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace ClinicaDental.Modelos.Entidades
 {
-    internal class Servicios
+    public internal class Servicios
     {
+        public int Id { get; set; }
+
+        public int Id { get; set; }
+
+
+
+
+
+
     }
 }
