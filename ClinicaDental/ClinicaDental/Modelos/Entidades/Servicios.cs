@@ -6,16 +6,11 @@ using System.Threading.Tasks;
 
 namespace ClinicaDental.Modelos.Entidades
 {
-    public internal class Servicios
+    public  class Servicios
     {
         public int Id { get; set; }
-
-        public int Id { get; set; }
-
-
-
-
-
-
+        public string  Nombre { get; set; }
+        public string  Descripcion { get; set; }
+        public decimal Costo { get; set; }
     }
 }
