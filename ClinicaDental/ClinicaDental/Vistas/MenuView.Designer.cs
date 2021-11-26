@@ -33,22 +33,22 @@ namespace ClinicaDental.Vistas
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuView));
             this.ribbonControlAdv1 = new Syncfusion.Windows.Forms.Tools.RibbonControlAdv();
             this.toolStripTabItem1 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
-            this.toolStripTabItem2 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
-            this.toolStripTabItem3 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx1 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.toolStripTabItem2 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx2 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.toolStripTabItem3 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx3 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.tabbedMDIManager1 = new Syncfusion.Windows.Forms.Tools.TabbedMDIManager(this.components);
             this.ClienteToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.ServicioToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.ConsultaToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.tabbedMDIManager1 = new Syncfusion.Windows.Forms.Tools.TabbedMDIManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAdv1)).BeginInit();
             this.ribbonControlAdv1.SuspendLayout();
             this.toolStripTabItem1.Panel.SuspendLayout();
-            this.toolStripTabItem2.Panel.SuspendLayout();
-            this.toolStripTabItem3.Panel.SuspendLayout();
             this.toolStripEx1.SuspendLayout();
+            this.toolStripTabItem2.Panel.SuspendLayout();
             this.toolStripEx2.SuspendLayout();
+            this.toolStripTabItem3.Panel.SuspendLayout();
             this.toolStripEx3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -99,43 +99,9 @@ namespace ClinicaDental.Vistas
             this.toolStripTabItem1.Panel.TabIndex = 2;
             this.toolStripTabItem1.Panel.Text = "Cliente";
             this.toolStripTabItem1.Position = 0;
-            this.toolStripTabItem1.Size = new System.Drawing.Size(57, 23);
+            this.toolStripTabItem1.Size = new System.Drawing.Size(67, 30);
             this.toolStripTabItem1.Tag = "1";
             this.toolStripTabItem1.Text = "Cliente";
-            // 
-            // toolStripTabItem2
-            // 
-            this.toolStripTabItem2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripTabItem2.Name = "toolStripTabItem2";
-            // 
-            // ribbonControlAdv1.ribbonPanel2
-            // 
-            this.toolStripTabItem2.Panel.Controls.Add(this.toolStripEx2);
-            this.toolStripTabItem2.Panel.Name = "ribbonPanel2";
-            this.toolStripTabItem2.Panel.ScrollPosition = 0;
-            this.toolStripTabItem2.Panel.TabIndex = 3;
-            this.toolStripTabItem2.Panel.Text = "Servicio";
-            this.toolStripTabItem2.Position = 1;
-            this.toolStripTabItem2.Size = new System.Drawing.Size(53, 19);
-            this.toolStripTabItem2.Tag = "2";
-            this.toolStripTabItem2.Text = "Servicio";
-            // 
-            // toolStripTabItem3
-            // 
-            this.toolStripTabItem3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripTabItem3.Name = "toolStripTabItem3";
-            // 
-            // ribbonControlAdv1.ribbonPanel3
-            // 
-            this.toolStripTabItem3.Panel.Controls.Add(this.toolStripEx3);
-            this.toolStripTabItem3.Panel.Name = "ribbonPanel3";
-            this.toolStripTabItem3.Panel.ScrollPosition = 0;
-            this.toolStripTabItem3.Panel.TabIndex = 4;
-            this.toolStripTabItem3.Panel.Text = "Consulta";
-            this.toolStripTabItem3.Position = 2;
-            this.toolStripTabItem3.Size = new System.Drawing.Size(59, 19);
-            this.toolStripTabItem3.Tag = "3";
-            this.toolStripTabItem3.Text = "Consulta";
             // 
             // toolStripEx1
             // 
@@ -155,6 +121,23 @@ namespace ClinicaDental.Vistas
             this.toolStripEx1.Size = new System.Drawing.Size(173, 79);
             this.toolStripEx1.TabIndex = 0;
             // 
+            // toolStripTabItem2
+            // 
+            this.toolStripTabItem2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripTabItem2.Name = "toolStripTabItem2";
+            // 
+            // ribbonControlAdv1.ribbonPanel2
+            // 
+            this.toolStripTabItem2.Panel.Controls.Add(this.toolStripEx2);
+            this.toolStripTabItem2.Panel.Name = "ribbonPanel2";
+            this.toolStripTabItem2.Panel.ScrollPosition = 0;
+            this.toolStripTabItem2.Panel.TabIndex = 3;
+            this.toolStripTabItem2.Panel.Text = "Servicio";
+            this.toolStripTabItem2.Position = 1;
+            this.toolStripTabItem2.Size = new System.Drawing.Size(63, 30);
+            this.toolStripTabItem2.Tag = "2";
+            this.toolStripTabItem2.Text = "Servicio";
+            // 
             // toolStripEx2
             // 
             this.toolStripEx2.AutoSize = false;
@@ -173,6 +156,23 @@ namespace ClinicaDental.Vistas
             this.toolStripEx2.Size = new System.Drawing.Size(177, 79);
             this.toolStripEx2.TabIndex = 0;
             // 
+            // toolStripTabItem3
+            // 
+            this.toolStripTabItem3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripTabItem3.Name = "toolStripTabItem3";
+            // 
+            // ribbonControlAdv1.ribbonPanel3
+            // 
+            this.toolStripTabItem3.Panel.Controls.Add(this.toolStripEx3);
+            this.toolStripTabItem3.Panel.Name = "ribbonPanel3";
+            this.toolStripTabItem3.Panel.ScrollPosition = 0;
+            this.toolStripTabItem3.Panel.TabIndex = 4;
+            this.toolStripTabItem3.Panel.Text = "Consulta";
+            this.toolStripTabItem3.Position = 2;
+            this.toolStripTabItem3.Size = new System.Drawing.Size(69, 30);
+            this.toolStripTabItem3.Tag = "3";
+            this.toolStripTabItem3.Text = "Consulta";
+            // 
             // toolStripEx3
             // 
             this.toolStripEx3.AutoSize = false;
@@ -190,6 +190,17 @@ namespace ClinicaDental.Vistas
             this.toolStripEx3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.toolStripEx3.Size = new System.Drawing.Size(192, 79);
             this.toolStripEx3.TabIndex = 0;
+            // 
+            // tabbedMDIManager1
+            // 
+            this.tabbedMDIManager1.AttachedTo = this;
+            this.tabbedMDIManager1.CloseButtonBackColor = System.Drawing.Color.White;
+            this.tabbedMDIManager1.CloseButtonToolTip = "";
+            this.tabbedMDIManager1.CloseButtonVisible = false;
+            this.tabbedMDIManager1.DropDownButtonToolTip = "";
+            this.tabbedMDIManager1.ImageSize = new System.Drawing.Size(16, 16);
+            this.tabbedMDIManager1.NeedUpdateHostedForm = false;
+            this.tabbedMDIManager1.ShowCloseButton = true;
             // 
             // ClienteToolStripButton
             // 
@@ -228,17 +239,6 @@ namespace ClinicaDental.Vistas
             this.ConsultaToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.ConsultaToolStripButton.Click += new System.EventHandler(this.ConsultaToolStripButton_Click);
             // 
-            // tabbedMDIManager1
-            // 
-            this.tabbedMDIManager1.AttachedTo = this;
-            this.tabbedMDIManager1.CloseButtonBackColor = System.Drawing.Color.White;
-            this.tabbedMDIManager1.CloseButtonToolTip = "";
-            this.tabbedMDIManager1.CloseButtonVisible = false;
-            this.tabbedMDIManager1.DropDownButtonToolTip = "";
-            this.tabbedMDIManager1.ImageSize = new System.Drawing.Size(16, 16);
-            this.tabbedMDIManager1.NeedUpdateHostedForm = false;
-            this.tabbedMDIManager1.ShowCloseButton = true;
-            // 
             // MenuView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -254,12 +254,12 @@ namespace ClinicaDental.Vistas
             this.ribbonControlAdv1.ResumeLayout(false);
             this.ribbonControlAdv1.PerformLayout();
             this.toolStripTabItem1.Panel.ResumeLayout(false);
-            this.toolStripTabItem2.Panel.ResumeLayout(false);
-            this.toolStripTabItem3.Panel.ResumeLayout(false);
             this.toolStripEx1.ResumeLayout(false);
             this.toolStripEx1.PerformLayout();
+            this.toolStripTabItem2.Panel.ResumeLayout(false);
             this.toolStripEx2.ResumeLayout(false);
             this.toolStripEx2.PerformLayout();
+            this.toolStripTabItem3.Panel.ResumeLayout(false);
             this.toolStripEx3.ResumeLayout(false);
             this.toolStripEx3.PerformLayout();
             this.ResumeLayout(false);
