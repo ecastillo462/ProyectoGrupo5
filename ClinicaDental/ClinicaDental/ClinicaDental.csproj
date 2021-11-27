@@ -63,6 +63,7 @@
     <Compile Include="Controladores\ConsultaController.cs" />
     <Compile Include="Controladores\LoginController.cs" />
     <Compile Include="Controladores\ServiciosController.cs" />
+    <Compile Include="Controladores\UsuarioController.cs" />
     <Compile Include="Modelos\DAO\ClienteDAO.cs" />
     <Compile Include="Modelos\DAO\Conexion.cs" />
     <Compile Include="Modelos\DAO\ServiciosDAO.cs" />

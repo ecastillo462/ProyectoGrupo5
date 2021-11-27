@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.EmailTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.NombreTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.IdTextBox = new System.Windows.Forms.TextBox();
+            this.IdtextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ClaveTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -42,7 +43,9 @@
             this.ModificarButton = new System.Windows.Forms.Button();
             this.NuevoButton = new System.Windows.Forms.Button();
             this.UsuariosDataGridView = new System.Windows.Forms.DataGridView();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.UsuariosDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // EmailTextBox
@@ -83,14 +86,14 @@
             this.label2.TabIndex = 14;
             this.label2.Text = "NOMBRE";
             // 
-            // IdTextBox
+            // IdtextBox
             // 
-            this.IdTextBox.Location = new System.Drawing.Point(261, 61);
-            this.IdTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.IdTextBox.Name = "IdTextBox";
-            this.IdTextBox.ReadOnly = true;
-            this.IdTextBox.Size = new System.Drawing.Size(132, 20);
-            this.IdTextBox.TabIndex = 13;
+            this.IdtextBox.Location = new System.Drawing.Point(261, 61);
+            this.IdtextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.IdtextBox.Name = "IdtextBox";
+            this.IdtextBox.ReadOnly = true;
+            this.IdtextBox.Size = new System.Drawing.Size(132, 20);
+            this.IdtextBox.TabIndex = 13;
             // 
             // label1
             // 
@@ -176,6 +179,10 @@
             this.UsuariosDataGridView.Size = new System.Drawing.Size(797, 190);
             this.UsuariosDataGridView.TabIndex = 35;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // UsuariosView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -193,11 +200,12 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.NombreTextBox);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.IdTextBox);
+            this.Controls.Add(this.IdtextBox);
             this.Controls.Add(this.label1);
             this.Name = "UsuariosView";
             this.Text = "Usuarios";
             ((System.ComponentModel.ISupportInitialize)(this.UsuariosDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,7 +217,7 @@
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.TextBox NombreTextBox;
         private System.Windows.Forms.Label label2;
-        public System.Windows.Forms.TextBox IdTextBox;
+        public System.Windows.Forms.TextBox IdtextBox;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.TextBox ClaveTextBox;
         private System.Windows.Forms.Label label4;
@@ -219,5 +227,6 @@
         public System.Windows.Forms.Button ModificarButton;
         public System.Windows.Forms.Button NuevoButton;
         public System.Windows.Forms.DataGridView UsuariosDataGridView;
+        public System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
