@@ -157,37 +157,57 @@ namespace ClinicaDental.Modelos.DAO
             return modifico;
         }
 
-        public Usuario GetUsuarioPorEmail(string email)
+        public string GetUsuarioPorEmail(string email)
         {
-            Usuario user = new Usuario();
+            string nombre = "";
             try
             {
                 StringBuilder sql = new StringBuilder();
-                sql.Append(" SELECT * FROM USUARIOS ");
+                sql.Append(" SELECT NOMBRE FROM USUARIOS ");
                 sql.Append(" WHERE EMAIL = @Email; ");
 
                 comando.Connection = MiConexion;
                 MiConexion.Open();
                 comando.CommandType = System.Data.CommandType.Text;
                 comando.CommandText = sql.ToString();
-                comando.Parameters.Add("@Email", SqlDbType.NVarChar, 50).Value = email;
-                SqlDataReader dr = comando.ExecuteReader();
+                comando.Parameters.AddWithValue("@Email", email);
 
-                if (dr.Read())
-                {
-                    user.Id = (int)dr["ID"];
-                    user.Nombre = (string)dr["NOMBRE"];
-                    user.Email = (string)dr["EMAIL"];
-                }
+                nombre = comando.ExecuteScalar().ToString();
 
+                comando.Parameters.Clear();
                 MiConexion.Close();
 
             }
-            catch (Exception )
+            catch (Exception ex)
             {
                 MiConexion.Close();
             }
-            return user;
+            return nombre;
+        }
+
+        public int getIdUsuarioPorNombre(string nombre)
+        {
+
+            int IdUsuario = 0;
+
+            try
+            {
+                StringBuilder sql = new StringBuilder();
+                sql.Append(" SELECT ID FROM USUARIOS WHERE NOMBRE = @Nombre ");
+
+                comando.Parameters.AddWithValue("@Nombre", nombre);
+
+                IdUsuario = Convert.ToInt32(comando.ExecuteScalar());
+
+                MiConexion.Close();
+                comando.Parameters.Clear();
+            }
+            catch (Exception e)
+            {
+
+            }
+
+            return IdUsuario;
         }
     }
 }

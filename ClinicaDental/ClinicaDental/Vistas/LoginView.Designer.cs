@@ -67,7 +67,7 @@ namespace ClinicaDental.Vistas
             this.AgregarButton.TabIndex = 2;
             this.AgregarButton.Text = "Agregar";
             this.AgregarButton.UseVisualStyleBackColor = true;
-            this.AgregarButton.Click += new System.EventHandler(this.AgregarButton_Click);
+
             // 
             // label1
             // 
