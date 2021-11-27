@@ -34,14 +34,14 @@ namespace ClinicaDental.Vistas
             this.ribbonControlAdv1 = new Syncfusion.Windows.Forms.Tools.RibbonControlAdv();
             this.toolStripTabItem1 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx1 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.ClienteToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripTabItem2 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx2 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.ServicioToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripTabItem3 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx3 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
-            this.tabbedMDIManager1 = new Syncfusion.Windows.Forms.Tools.TabbedMDIManager(this.components);
-            this.ClienteToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.ServicioToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.ConsultaToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.tabbedMDIManager1 = new Syncfusion.Windows.Forms.Tools.TabbedMDIManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAdv1)).BeginInit();
             this.ribbonControlAdv1.SuspendLayout();
             this.toolStripTabItem1.Panel.SuspendLayout();
@@ -121,6 +121,19 @@ namespace ClinicaDental.Vistas
             this.toolStripEx1.Size = new System.Drawing.Size(173, 79);
             this.toolStripEx1.TabIndex = 0;
             // 
+            // ClienteToolStripButton
+            // 
+            this.ribbonControlAdv1.SetDisplayMode(this.ClienteToolStripButton, Syncfusion.Windows.Forms.Tools.RibbonItemDisplayMode.Normal);
+            this.ClienteToolStripButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClienteToolStripButton.Image = global::ClinicaDental.Properties.Resources.Cliente_icon;
+            this.ClienteToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.ClienteToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ClienteToolStripButton.Name = "ClienteToolStripButton";
+            this.ClienteToolStripButton.Size = new System.Drawing.Size(108, 62);
+            this.ClienteToolStripButton.Text = "Tipo De Cliente";
+            this.ClienteToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ClienteToolStripButton.Click += new System.EventHandler(this.ClienteToolStripButton_Click);
+            // 
             // toolStripTabItem2
             // 
             this.toolStripTabItem2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -155,6 +168,18 @@ namespace ClinicaDental.Vistas
             this.toolStripEx2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.toolStripEx2.Size = new System.Drawing.Size(177, 79);
             this.toolStripEx2.TabIndex = 0;
+            // 
+            // ServicioToolStripButton
+            // 
+            this.ServicioToolStripButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ServicioToolStripButton.Image = global::ClinicaDental.Properties.Resources.centro_de_llamadas;
+            this.ServicioToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.ServicioToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ServicioToolStripButton.Name = "ServicioToolStripButton";
+            this.ServicioToolStripButton.Size = new System.Drawing.Size(114, 62);
+            this.ServicioToolStripButton.Text = "Tipo De Servicio";
+            this.ServicioToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ServicioToolStripButton.Click += new System.EventHandler(this.ServicioToolStripButton_Click);
             // 
             // toolStripTabItem3
             // 
@@ -191,42 +216,6 @@ namespace ClinicaDental.Vistas
             this.toolStripEx3.Size = new System.Drawing.Size(192, 79);
             this.toolStripEx3.TabIndex = 0;
             // 
-            // tabbedMDIManager1
-            // 
-            this.tabbedMDIManager1.AttachedTo = this;
-            this.tabbedMDIManager1.CloseButtonBackColor = System.Drawing.Color.White;
-            this.tabbedMDIManager1.CloseButtonToolTip = "";
-            this.tabbedMDIManager1.CloseButtonVisible = false;
-            this.tabbedMDIManager1.DropDownButtonToolTip = "";
-            this.tabbedMDIManager1.ImageSize = new System.Drawing.Size(16, 16);
-            this.tabbedMDIManager1.NeedUpdateHostedForm = false;
-            this.tabbedMDIManager1.ShowCloseButton = true;
-            // 
-            // ClienteToolStripButton
-            // 
-            this.ribbonControlAdv1.SetDisplayMode(this.ClienteToolStripButton, Syncfusion.Windows.Forms.Tools.RibbonItemDisplayMode.Normal);
-            this.ClienteToolStripButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClienteToolStripButton.Image = global::ClinicaDental.Properties.Resources.Cliente_icon;
-            this.ClienteToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.ClienteToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.ClienteToolStripButton.Name = "ClienteToolStripButton";
-            this.ClienteToolStripButton.Size = new System.Drawing.Size(108, 62);
-            this.ClienteToolStripButton.Text = "Tipo De Cliente";
-            this.ClienteToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.ClienteToolStripButton.Click += new System.EventHandler(this.ClienteToolStripButton_Click);
-            // 
-            // ServicioToolStripButton
-            // 
-            this.ServicioToolStripButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ServicioToolStripButton.Image = global::ClinicaDental.Properties.Resources.centro_de_llamadas;
-            this.ServicioToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.ServicioToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.ServicioToolStripButton.Name = "ServicioToolStripButton";
-            this.ServicioToolStripButton.Size = new System.Drawing.Size(114, 62);
-            this.ServicioToolStripButton.Text = "Tipo De Servicio";
-            this.ServicioToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.ServicioToolStripButton.Click += new System.EventHandler(this.ServicioToolStripButton_Click);
-            // 
             // ConsultaToolStripButton
             // 
             this.ConsultaToolStripButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -238,6 +227,17 @@ namespace ClinicaDental.Vistas
             this.ConsultaToolStripButton.Text = "Tipo De Consulta";
             this.ConsultaToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.ConsultaToolStripButton.Click += new System.EventHandler(this.ConsultaToolStripButton_Click);
+            // 
+            // tabbedMDIManager1
+            // 
+            this.tabbedMDIManager1.AttachedTo = this;
+            this.tabbedMDIManager1.CloseButtonBackColor = System.Drawing.Color.White;
+            this.tabbedMDIManager1.CloseButtonToolTip = "";
+            this.tabbedMDIManager1.CloseButtonVisible = false;
+            this.tabbedMDIManager1.DropDownButtonToolTip = "";
+            this.tabbedMDIManager1.ImageSize = new System.Drawing.Size(16, 16);
+            this.tabbedMDIManager1.NeedUpdateHostedForm = false;
+            this.tabbedMDIManager1.ShowCloseButton = true;
             // 
             // MenuView
             // 

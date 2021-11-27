@@ -29,6 +29,7 @@ namespace ClinicaDental.Vistas
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.NombreTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.IdTextBox = new System.Windows.Forms.TextBox();
@@ -43,13 +44,15 @@ namespace ClinicaDental.Vistas
             this.ModificarButton = new System.Windows.Forms.Button();
             this.NuevoButton = new System.Windows.Forms.Button();
             this.ServiciosDataGridView = new System.Windows.Forms.DataGridView();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ServiciosDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // NombreTextBox
             // 
             this.NombreTextBox.Enabled = false;
-            this.NombreTextBox.Location = new System.Drawing.Point(224, 85);
+            this.NombreTextBox.Location = new System.Drawing.Point(270, 78);
             this.NombreTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.NombreTextBox.Name = "NombreTextBox";
             this.NombreTextBox.Size = new System.Drawing.Size(330, 20);
@@ -61,9 +64,9 @@ namespace ClinicaDental.Vistas
             this.label2.Location = new System.Drawing.Point(131, 85);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 13);
+            this.label2.Size = new System.Drawing.Size(131, 13);
             this.label2.TabIndex = 8;
-            this.label2.Text = "NOMBRE";
+            this.label2.Text = "NOMBRE DEL SERVICIO";
             // 
             // IdTextBox
             // 
@@ -87,7 +90,7 @@ namespace ClinicaDental.Vistas
             // DescripcionTextBox
             // 
             this.DescripcionTextBox.Enabled = false;
-            this.DescripcionTextBox.Location = new System.Drawing.Point(224, 129);
+            this.DescripcionTextBox.Location = new System.Drawing.Point(270, 122);
             this.DescripcionTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.DescripcionTextBox.Name = "DescripcionTextBox";
             this.DescripcionTextBox.Size = new System.Drawing.Size(330, 20);
@@ -106,7 +109,7 @@ namespace ClinicaDental.Vistas
             // CostoTextBox
             // 
             this.CostoTextBox.Enabled = false;
-            this.CostoTextBox.Location = new System.Drawing.Point(224, 173);
+            this.CostoTextBox.Location = new System.Drawing.Point(270, 166);
             this.CostoTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CostoTextBox.Name = "CostoTextBox";
             this.CostoTextBox.Size = new System.Drawing.Size(330, 20);
@@ -179,6 +182,10 @@ namespace ClinicaDental.Vistas
             this.ServiciosDataGridView.Size = new System.Drawing.Size(799, 197);
             this.ServiciosDataGridView.TabIndex = 30;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // ServiciosView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -201,6 +208,7 @@ namespace ClinicaDental.Vistas
             this.Name = "ServiciosView";
             this.Text = "Servicios";
             ((System.ComponentModel.ISupportInitialize)(this.ServiciosDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -222,5 +230,6 @@ namespace ClinicaDental.Vistas
         public System.Windows.Forms.Button ModificarButton;
         public System.Windows.Forms.Button NuevoButton;
         public System.Windows.Forms.DataGridView ServiciosDataGridView;
+        public System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

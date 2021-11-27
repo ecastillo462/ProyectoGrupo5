@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace ClinicaDental.Modelos.Entidades
 {
-    public class Servicios
+    public  class Servicios
     {
+        public int Id { get; set; }
+
         public int Id { get; set; }
 
 
