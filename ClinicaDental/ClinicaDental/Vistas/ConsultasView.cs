@@ -1,20 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ClinicaDental.Controladores;
+using ClinicaDental.Modelos.DAO;
+using ClinicaDental.Modelos.Entidades;
 using System.Windows.Forms;
 
 namespace ClinicaDental.Vistas
 {
     public partial class ConsultasView : Form
     {
+        public Usuario user = new Usuario(); 
+        UsuarioDAO userDAO = new UsuarioDAO();
+        LoginView loginView = new LoginView(); 
         public ConsultasView()
         {
             InitializeComponent();
+
+            ConsultaController controlador = new ConsultaController(this);
+
         }
     }
 }

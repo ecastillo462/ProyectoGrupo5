@@ -73,6 +73,7 @@ namespace ClinicaDental.Controladores
                     {
                         LimpiarControles();
                         DeshabilitarControles();
+                        ListarClientes(); 
                         MessageBox.Show("Paciente ingresado con éxito");
                     }
                     else
@@ -87,9 +88,9 @@ namespace ClinicaDental.Controladores
                     if (modifico)
                     {
                         DeshabilitarControles();
-                        LimpiarControles();
                         MessageBox.Show("Paciente modificado exitosamente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         ListarClientes();
+                        LimpiarControles();
                     }
                     else
                     {
@@ -115,6 +116,7 @@ namespace ClinicaDental.Controladores
                 clienteVista.GeneroComboBox.Text = clienteVista.ClientesDataGridView.CurrentRow.Cells["GENERO"].Value.ToString();
                 clienteVista.TelefonoTextBox.Text = clienteVista.ClientesDataGridView.CurrentRow.Cells["TELEFONO"].Value.ToString();
                 clienteVista.EmailTextBox.Text = clienteVista.ClientesDataGridView.CurrentRow.Cells["EMAIL"].Value.ToString();
+                clienteVista.EdadTextBox.Text = clienteVista.ClientesDataGridView.CurrentRow.Cells["EDAD"].Value.ToString();
 
             }
             else
@@ -134,6 +136,7 @@ namespace ClinicaDental.Controladores
                 {
                     MessageBox.Show("Paciente eliminado exitosamente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ListarClientes();
+                    LimpiarControles(); 
                 }
                 else
                 {
@@ -206,6 +209,7 @@ namespace ClinicaDental.Controladores
             clienteVista.GeneroComboBox.Text = string.Empty;
             clienteVista.TelefonoTextBox.Clear();
             clienteVista.EmailTextBox.Clear();
+            clienteVista.IdTextBox.Text = string.Empty;
         }
     }
 }

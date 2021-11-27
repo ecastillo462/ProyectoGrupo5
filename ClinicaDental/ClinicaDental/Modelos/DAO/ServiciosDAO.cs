@@ -119,6 +119,35 @@ namespace ClinicaDental.Modelos.DAO
             return dt;
         }
 
+        public int getIdTipoServicioPorNombre(string nombre)
+        {
+            int idTipoServicio = 0;
+
+            try
+            {
+                StringBuilder sql = new StringBuilder();
+                sql.Append(" SELECT ID FROM SERVICIOS WHERE NOMBRE = @Nombre ");
+
+                comando.Connection = MiConexion;
+                MiConexion.Open();
+                comando.CommandType = System.Data.CommandType.Text;
+                comando.CommandText = sql.ToString();
+
+                comando.Parameters.AddWithValue("@Nombre", nombre);
+
+                idTipoServicio = Convert.ToInt32(comando.ExecuteScalar());
+ 
+                MiConexion.Close();
+
+                comando.Parameters.Clear(); 
+            }
+            catch (Exception)
+            {
+
+            }
+
+            return idTipoServicio;
+        }
 
 
 

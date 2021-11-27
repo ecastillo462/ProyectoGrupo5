@@ -12,5 +12,6 @@ namespace ClinicaDental.Modelos.Entidades
         public string  Nombre { get; set; }
         public string  Descripcion { get; set; }
         public decimal Costo { get; set; }
+
     }
 }

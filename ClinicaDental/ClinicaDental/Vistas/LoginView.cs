@@ -13,11 +13,13 @@ namespace ClinicaDental.Vistas
 {
     public partial class LoginView : Form
     {
+        public string emailUsuario; 
         public LoginView()
         {
             InitializeComponent();
             LoginController controlador = new LoginController(this);
-            
+            emailUsuario = EmailTextBox.Text;
         }
+
     }
 }
