@@ -26,7 +26,8 @@ namespace ClinicaDental.Controladores
 
         private void Agregar(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            UsuariosView mostrar = new UsuariosView();
+            mostrar.Show();
         }
 
         private void Cancelar(object sender, EventArgs e)

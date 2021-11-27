@@ -19,5 +19,10 @@ namespace ClinicaDental.Vistas
             LoginController controlador = new LoginController(this);
             
         }
+
+        private void AgregarButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

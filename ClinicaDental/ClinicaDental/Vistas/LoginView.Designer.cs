@@ -67,24 +67,25 @@ namespace ClinicaDental.Vistas
             this.AgregarButton.TabIndex = 2;
             this.AgregarButton.Text = "Agregar";
             this.AgregarButton.UseVisualStyleBackColor = true;
+            this.AgregarButton.Click += new System.EventHandler(this.AgregarButton_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Uighur", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(72, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 27);
+            this.label1.Size = new System.Drawing.Size(77, 25);
             this.label1.TabIndex = 3;
             this.label1.Text = "Email:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Uighur", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(32, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 27);
+            this.label2.Size = new System.Drawing.Size(140, 25);
             this.label2.TabIndex = 4;
             this.label2.Text = "Contraseña:";
             // 
