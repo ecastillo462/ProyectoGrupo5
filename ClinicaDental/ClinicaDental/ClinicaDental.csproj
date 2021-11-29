@@ -58,6 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controladores\ClaseCompartida.cs" />
     <Compile Include="Controladores\ClienteController.cs" />
     <Compile Include="Controladores\ConsultaController.cs" />
     <Compile Include="Controladores\FacturaController.cs" />

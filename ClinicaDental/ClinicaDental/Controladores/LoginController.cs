@@ -18,10 +18,15 @@ namespace ClinicaDental.Controladores
         public LoginController (LoginView view)
         {
             vista = view;
-
+            vista.EmailTextBox.TextChanged += EmailTextBox_TextChanged;
             vista.AceptarButton.Click += new EventHandler(ValidarUsuario);
             vista.CancelarButton.Click += new EventHandler(Cancelar);
             vista.AgregarButton.Click += new EventHandler(Agregar);
+        }
+
+        private void EmailTextBox_TextChanged(object sender, EventArgs e)
+        {
+            ClaseCompartida.EmailUsuario = vista.EmailTextBox.Text;
         }
 
         private void Agregar(object sender, EventArgs e)
@@ -55,6 +60,9 @@ namespace ClinicaDental.Controladores
                // MessageBox.Show("Usuario Correcto");
                 MenuView menu = new MenuView();
                 vista.Hide();
+                System.Security.Principal.GenericIdentity identidad = new System.Security.Principal.GenericIdentity(vista.EmailTextBox.Text);
+                System.Security.Principal.GenericPrincipal principal = new System.Security.Principal.GenericPrincipal(identidad, null);
+                System.Threading.Thread.CurrentPrincipal = principal;
 
                 menu.ShowDialog();
                 vista.Close(); 

@@ -256,6 +256,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FacturaView";
             this.Text = "Factura";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.FacturasDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);

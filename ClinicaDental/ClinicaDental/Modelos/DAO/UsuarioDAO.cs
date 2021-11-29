@@ -85,7 +85,7 @@ namespace ClinicaDental.Modelos.DAO
             try
             {
                 StringBuilder sql = new StringBuilder();
-                sql.Append(" SELECT * FROM USUARIOS ");
+                sql.Append(" SELECT NOMBRE, EMAIL FROM USUARIOS ");
                 comando.Connection = MiConexion;
                 MiConexion.Open();
                 comando.CommandType = System.Data.CommandType.Text;

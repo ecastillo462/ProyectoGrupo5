@@ -47,6 +47,7 @@ namespace ClinicaDental.Controladores
         }
         private void Load(object sender, EventArgs e)
         {
+            ListarFacturas(); 
             HabilitarControles();
             vista.IsvTextBox.Text = Convert.ToString(Convert.ToDecimal(vista.SubTotalTextBox.Text) * 0.15M);
             operacion = "Nuevo";
@@ -59,6 +60,13 @@ namespace ClinicaDental.Controladores
                 vista.DescuentoTextBox.Focus();
                 return;
             }
+
+            if (facturaDAO.ValidarFactura(Convert.ToInt32(vista.IdConsultaTextBox.Text)) && operacion != "Modificar")
+            {
+                MessageBox.Show("No puedes volver a guardar una factura ya existente, solamente la puedes modificar");
+                return; 
+            }
+
             factura.SubTotal = Convert.ToDecimal(vista.SubTotalTextBox.Text);
             factura.IdConsulta = Convert.ToInt32(vista.IdConsultaTextBox.Text);
             factura.Descuento = Convert.ToDecimal( vista.DescuentoTextBox.Text);

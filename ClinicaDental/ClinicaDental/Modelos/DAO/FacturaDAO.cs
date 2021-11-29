@@ -12,6 +12,30 @@ namespace ClinicaDental.Modelos.DAO
     public class FacturaDAO: Conexion
     {
         SqlCommand comando = new SqlCommand();
+        public bool ValidarFactura(int IdConsulta)
+        {
+            bool valida = false;
+            try
+            {
+                StringBuilder sql = new StringBuilder();
+                sql.Append(" SELECT 1 FROM FACTURA WHERE ID_CONSULTA = @IdConsulta");
+
+                comando.Connection = MiConexion;
+                MiConexion.Open();
+                comando.CommandType = System.Data.CommandType.Text;
+                comando.CommandText = sql.ToString();
+                comando.Parameters.Add("@IdConsulta", SqlDbType.Int).Value = IdConsulta;
+                valida = Convert.ToBoolean(comando.ExecuteScalar());
+                comando.Parameters.Clear();
+                MiConexion.Close();
+
+            }
+            catch (Exception)
+            {
+                valida = false; 
+            }
+            return valida;
+        }
         public bool CrearFactura(Factura factura)
         {
             bool inserto = false;

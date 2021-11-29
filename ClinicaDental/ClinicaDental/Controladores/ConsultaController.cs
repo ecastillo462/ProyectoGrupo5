@@ -39,8 +39,9 @@ namespace ClinicaDental.Controladores
             {
                 vistaFactura.IdConsultaTextBox.Text = VistaConsulta.ConsultasDataGridView.CurrentRow.Cells["ID_CONSULTA"].Value.ToString();
                 vistaFactura.SubTotalTextBox.Text = consultaDAO.GetSubTotal(Convert.ToInt32(vistaFactura.IdConsultaTextBox.Text)).ToString();
-                vistaFactura.Show();
                 vistaMenu.Hide();
+                vistaFactura.ShowDialog();
+                vistaFactura.Hide(); 
             }
             else
             {
@@ -169,7 +170,7 @@ namespace ClinicaDental.Controladores
         private void VistaConsulta_Load(object sender, EventArgs e)
         {
             LoginView loginView = new LoginView();
-            VistaConsulta.UsuarioTextBox.Text = "diaz";
+            VistaConsulta.UsuarioTextBox.Text = usuarioDAO.GetUsuarioPorEmail(ClaseCompartida.EmailUsuario);
             DeshabilitarControles();
             ListarConsultas(); 
         }
