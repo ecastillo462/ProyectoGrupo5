@@ -29,7 +29,9 @@ namespace ClinicaDental.Modelos.DAO
                 comando.Parameters.Add("@Email", SqlDbType.NVarChar, 50).Value = user.Email;
                 comando.Parameters.Add("@Clave", SqlDbType.NVarChar, 100).Value = user.Clave;
                 valido = Convert.ToBoolean(comando.ExecuteScalar());
-                MiConexion.Close(); 
+                comando.Parameters.Clear();
+                MiConexion.Close();
+                
             }
             catch (Exception)
             {
@@ -38,9 +40,6 @@ namespace ClinicaDental.Modelos.DAO
             }
             return valido;
         }
-
-
-        
         public bool InsertarNuevoUsuario(Usuario user)
         {
             try
@@ -58,6 +57,7 @@ namespace ClinicaDental.Modelos.DAO
                 comando.Parameters.Add("@Clave", SqlDbType.NVarChar, 100).Value = EncriptarClave(user.Clave);
                 comando.ExecuteNonQuery();
                 MiConexion.Close();
+                comando.Parameters.Clear();
                 return true;
 
             }
@@ -122,6 +122,7 @@ namespace ClinicaDental.Modelos.DAO
                 comando.ExecuteNonQuery();
                 modifico = true;
                 MiConexion.Close();
+                comando.Parameters.Clear();
 
             }
             catch (Exception )
@@ -156,7 +157,6 @@ namespace ClinicaDental.Modelos.DAO
             }
             return modifico;
         }
-
         public string GetUsuarioPorEmail(string email)
         {
             string nombre = "";
@@ -176,7 +176,6 @@ namespace ClinicaDental.Modelos.DAO
 
                 comando.Parameters.Clear();
                 MiConexion.Close();
-
             }
             catch (Exception ex)
             {
@@ -184,17 +183,18 @@ namespace ClinicaDental.Modelos.DAO
             }
             return nombre;
         }
-
         public int getIdUsuarioPorNombre(string nombre)
         {
-
             int IdUsuario = 0;
 
             try
             {
                 StringBuilder sql = new StringBuilder();
                 sql.Append(" SELECT ID FROM USUARIOS WHERE NOMBRE = @Nombre ");
-
+                comando.Connection = MiConexion;
+                MiConexion.Open();
+                comando.CommandType = System.Data.CommandType.Text;
+                comando.CommandText = sql.ToString();
                 comando.Parameters.AddWithValue("@Nombre", nombre);
 
                 IdUsuario = Convert.ToInt32(comando.ExecuteScalar());
@@ -206,7 +206,6 @@ namespace ClinicaDental.Modelos.DAO
             {
 
             }
-
             return IdUsuario;
         }
     }

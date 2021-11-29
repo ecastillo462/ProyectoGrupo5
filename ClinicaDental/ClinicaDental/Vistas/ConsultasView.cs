@@ -9,13 +9,11 @@ namespace ClinicaDental.Vistas
     {
         public Usuario user = new Usuario(); 
         UsuarioDAO userDAO = new UsuarioDAO();
-        LoginView loginView = new LoginView(); 
         public ConsultasView()
         {
             InitializeComponent();
 
             ConsultaController controlador = new ConsultaController(this);
-
         }
     }
 }

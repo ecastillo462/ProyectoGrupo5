@@ -67,7 +67,6 @@ namespace ClinicaDental.Vistas
             this.AgregarButton.TabIndex = 2;
             this.AgregarButton.Text = "Agregar";
             this.AgregarButton.UseVisualStyleBackColor = true;
-
             // 
             // label1
             // 
@@ -95,7 +94,6 @@ namespace ClinicaDental.Vistas
             this.EmailTextBox.Name = "EmailTextBox";
             this.EmailTextBox.Size = new System.Drawing.Size(265, 20);
             this.EmailTextBox.TabIndex = 5;
-            this.EmailTextBox.Text = "grupocinco@gmail.com";
             // 
             // ContraseñaTextBox
             // 

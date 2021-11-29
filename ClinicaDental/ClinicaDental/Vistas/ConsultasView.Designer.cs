@@ -50,6 +50,7 @@ namespace ClinicaDental.Vistas
             this.ClientesComboBox = new System.Windows.Forms.ComboBox();
             this.ServiciosComboBox = new System.Windows.Forms.ComboBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.ImprimirFacturaButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ConsultasDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -129,7 +130,7 @@ namespace ClinicaDental.Vistas
             this.DescripcionTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.DescripcionTextBox.Multiline = true;
             this.DescripcionTextBox.Name = "DescripcionTextBox";
-            this.DescripcionTextBox.Size = new System.Drawing.Size(572, 63);
+            this.DescripcionTextBox.Size = new System.Drawing.Size(588, 63);
             this.DescripcionTextBox.TabIndex = 33;
             // 
             // label8
@@ -145,7 +146,7 @@ namespace ClinicaDental.Vistas
             // CancelarButton
             // 
             this.CancelarButton.Enabled = false;
-            this.CancelarButton.Location = new System.Drawing.Point(580, 298);
+            this.CancelarButton.Location = new System.Drawing.Point(590, 298);
             this.CancelarButton.Name = "CancelarButton";
             this.CancelarButton.Size = new System.Drawing.Size(93, 35);
             this.CancelarButton.TabIndex = 39;
@@ -154,7 +155,7 @@ namespace ClinicaDental.Vistas
             // 
             // EliminarButton
             // 
-            this.EliminarButton.Location = new System.Drawing.Point(481, 298);
+            this.EliminarButton.Location = new System.Drawing.Point(491, 298);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(93, 35);
             this.EliminarButton.TabIndex = 38;
@@ -164,7 +165,7 @@ namespace ClinicaDental.Vistas
             // GuardarButton
             // 
             this.GuardarButton.Enabled = false;
-            this.GuardarButton.Location = new System.Drawing.Point(382, 298);
+            this.GuardarButton.Location = new System.Drawing.Point(392, 298);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(93, 35);
             this.GuardarButton.TabIndex = 37;
@@ -173,7 +174,7 @@ namespace ClinicaDental.Vistas
             // 
             // ModificarButton
             // 
-            this.ModificarButton.Location = new System.Drawing.Point(283, 298);
+            this.ModificarButton.Location = new System.Drawing.Point(293, 298);
             this.ModificarButton.Name = "ModificarButton";
             this.ModificarButton.Size = new System.Drawing.Size(93, 35);
             this.ModificarButton.TabIndex = 36;
@@ -182,7 +183,7 @@ namespace ClinicaDental.Vistas
             // 
             // NuevoButton
             // 
-            this.NuevoButton.Location = new System.Drawing.Point(184, 298);
+            this.NuevoButton.Location = new System.Drawing.Point(194, 298);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(93, 35);
             this.NuevoButton.TabIndex = 35;
@@ -237,11 +238,21 @@ namespace ClinicaDental.Vistas
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // ImprimirFacturaButton
+            // 
+            this.ImprimirFacturaButton.Location = new System.Drawing.Point(689, 298);
+            this.ImprimirFacturaButton.Name = "ImprimirFacturaButton";
+            this.ImprimirFacturaButton.Size = new System.Drawing.Size(93, 35);
+            this.ImprimirFacturaButton.TabIndex = 48;
+            this.ImprimirFacturaButton.Text = "Imprimir Factura";
+            this.ImprimirFacturaButton.UseVisualStyleBackColor = true;
+            // 
             // ConsultasView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(856, 517);
+            this.Controls.Add(this.ImprimirFacturaButton);
             this.Controls.Add(this.ServiciosComboBox);
             this.Controls.Add(this.ClientesComboBox);
             this.Controls.Add(this.label2);
@@ -291,5 +302,6 @@ namespace ClinicaDental.Vistas
         public System.Windows.Forms.ComboBox ServiciosComboBox;
         public System.Windows.Forms.ErrorProvider errorProvider1;
         public System.Windows.Forms.DateTimePicker FechaDateTimePicker;
+        public System.Windows.Forms.Button ImprimirFacturaButton;
     }
 }

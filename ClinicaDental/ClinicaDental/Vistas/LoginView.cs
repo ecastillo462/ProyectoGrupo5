@@ -20,6 +20,6 @@ namespace ClinicaDental.Vistas
             LoginController controlador = new LoginController(this);
             emailUsuario = EmailTextBox.Text;
         }
-
+        
     }
 }

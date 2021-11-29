@@ -36,7 +36,6 @@ namespace ClinicaDental.Controladores
         }
         private void LimpiarControles()
         {
-            vista.EmailTextBox.Clear();
             vista.ContraseñaTextBox.Clear();
         }
         private void ValidarUsuario(object sender, EventArgs e)
@@ -65,17 +64,16 @@ namespace ClinicaDental.Controladores
                 MessageBox.Show("Usuario Incorrecto");
             }
         }
-         public static string EncriptarClave(string str)
-         {
-              SHA256 sha256 = SHA256Managed.Create();
-              ASCIIEncoding encoding = new ASCIIEncoding();
-              byte[] streams = null;
-              StringBuilder sb = new StringBuilder();
-              streams = sha256.ComputeHash(encoding.GetBytes(str));
-              for (int i = 0; i < streams.Length; i++) sb.AppendFormat("{0:x2}", streams[i]);
-              return sb.ToString();
-         }
-
-        
+        public static string EncriptarClave(string str)
+        {
+            string cadena = str + "MiClavePersonal";
+            SHA256 sha256 = SHA256Managed.Create();
+            ASCIIEncoding encoding = new ASCIIEncoding();
+            byte[] stream = null;
+            StringBuilder sb = new StringBuilder();
+            stream = sha256.ComputeHash(encoding.GetBytes(cadena));
+            for (int i = 0; i < stream.Length; i++) sb.AppendFormat("{0:x2}", stream[i]);
+            return sb.ToString();
+        }
     }
 }

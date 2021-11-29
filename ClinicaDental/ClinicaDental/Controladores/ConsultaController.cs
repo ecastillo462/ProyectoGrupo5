@@ -17,10 +17,11 @@ namespace ClinicaDental.Controladores
         Consulta consulta = new Consulta();
         ConsultaDAO consultaDAO = new ConsultaDAO(); 
         UsuarioDAO usuarioDAO = new UsuarioDAO();
-        ServiciosDAO serviciosDAO = new ServiciosDAO(); 
-        string opcion = ""; 
-
-        public ConsultaController (ConsultasView view )
+        ServiciosDAO serviciosDAO = new ServiciosDAO();
+        FacturaView vistaFactura = new FacturaView();
+        MenuView vistaMenu = new MenuView();
+        string opcion = "";
+        public ConsultaController (ConsultasView view)
         {
             VistaConsulta = view;
             VistaConsulta.Load += VistaConsulta_Load;
@@ -29,10 +30,23 @@ namespace ClinicaDental.Controladores
             VistaConsulta.EliminarButton.Click += new EventHandler(Eliminar);
             VistaConsulta.CancelarButton.Click += new EventHandler(Cancelar);
             VistaConsulta.ModificarButton.Click += new EventHandler(Modificar);
-
+            VistaConsulta.ImprimirFacturaButton.Click += new EventHandler(Imprimir);
             VistaConsulta.UsuarioTextBox.Text = "Prueba"; 
         }
-
+        private void Imprimir(object sender, EventArgs e)
+        {
+            if (VistaConsulta.ConsultasDataGridView.SelectedRows.Count > 0)
+            {
+                vistaFactura.IdConsultaTextBox.Text = VistaConsulta.ConsultasDataGridView.CurrentRow.Cells["ID_CONSULTA"].Value.ToString();
+                vistaFactura.SubTotalTextBox.Text = consultaDAO.GetSubTotal(Convert.ToInt32(vistaFactura.IdConsultaTextBox.Text)).ToString();
+                vistaFactura.Show();
+                vistaMenu.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Debes seleccionar un registro");
+            }             
+        }
         private void Modificar(object sender, EventArgs e)
         {
             if (VistaConsulta.ConsultasDataGridView.SelectedRows.Count > 0)
@@ -54,32 +68,26 @@ namespace ClinicaDental.Controladores
             }
 
         }
-
         private void Guardar(object sender, EventArgs e)
         {
-            
             if (VistaConsulta.ClientesComboBox.SelectedItem == null)
             {
                 VistaConsulta.errorProvider1.SetError(VistaConsulta.ClientesComboBox,"Debe seleccionar un cliente");
                 VistaConsulta.ClientesComboBox.Focus(); 
                 return;
             }
-
             if (VistaConsulta.ServiciosComboBox.SelectedItem == null)
             {
                 VistaConsulta.errorProvider1.SetError(VistaConsulta.ServiciosComboBox, "Debe seleccionar un servicio");
                 VistaConsulta.ServiciosComboBox.Focus();
                 return;
             }
-
             if (VistaConsulta.DescripcionTextBox.Text == "")
             {
                 VistaConsulta.errorProvider1.SetError(VistaConsulta.DescripcionTextBox, "Debe colocar una descripcion");
                 VistaConsulta.DescripcionTextBox.Focus();
                 return;
             }
-
-            
             try
             {
                 consulta.IdUsuario = usuarioDAO.getIdUsuarioPorNombre(VistaConsulta.UsuarioTextBox.Text);
@@ -87,7 +95,6 @@ namespace ClinicaDental.Controladores
                 consulta.IdTipoServicio = serviciosDAO.getIdTipoServicioPorNombre(VistaConsulta.ServiciosComboBox.Text);
                 consulta.Fecha = VistaConsulta.FechaDateTimePicker.Value; 
                 consulta.Descripcion = VistaConsulta.DescripcionTextBox.Text;
-
                 
                 if (opcion == "Nuevo")
                 {
@@ -130,13 +137,11 @@ namespace ClinicaDental.Controladores
             DeshabilitarControles();
             LimpiarControles();
         }
-
         private void Cancelar(object sender, EventArgs e)
         {
             DeshabilitarControles();
             LimpiarControles();
         }
-
         private void Eliminar(object sender, EventArgs e)
         {
             if (VistaConsulta.ConsultasDataGridView.SelectedRows.Count > 0)
@@ -158,30 +163,24 @@ namespace ClinicaDental.Controladores
                 MessageBox.Show("Debes seleccionar un registro"); 
             }
 
-
             DeshabilitarControles();
             LimpiarControles(); 
         }
-
-
         private void VistaConsulta_Load(object sender, EventArgs e)
         {
             LoginView loginView = new LoginView();
-            VistaConsulta.UsuarioTextBox.Text = usuarioDAO.GetUsuarioPorEmail(loginView.emailUsuario.ToString()); 
+            VistaConsulta.UsuarioTextBox.Text = "diaz";
             DeshabilitarControles();
             ListarConsultas(); 
         }
-
         private void Nuevo(object sender, EventArgs e)
         {
             opcion = "Nuevo";
 
             LoginView loginView = new LoginView();
-            VistaConsulta.UsuarioTextBox.Text = usuarioDAO.GetUsuarioPorEmail(loginView.emailUsuario.ToString());
             ListarClientesYServicios();
             HabilitarControles(); 
         }
-
         private void ListarClientesYServicios()
         {
             VistaConsulta.ClientesComboBox.DataSource = clienteDAO.GetClientes();
@@ -192,12 +191,10 @@ namespace ClinicaDental.Controladores
             VistaConsulta.ServiciosComboBox.DisplayMember = "SERVICIOS";
             VistaConsulta.ServiciosComboBox.ValueMember = "NOMBRE";
         }
-
         private void ListarConsultas()
         {
             VistaConsulta.ConsultasDataGridView.DataSource = consultaDAO.GetConsultas(); 
         }
-
         private void HabilitarControles()
         {
             VistaConsulta.ClientesComboBox.Enabled = true;

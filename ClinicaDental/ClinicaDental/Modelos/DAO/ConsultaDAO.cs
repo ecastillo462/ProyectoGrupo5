@@ -12,7 +12,6 @@ namespace ClinicaDental.Modelos.DAO
     class ConsultaDAO:Conexion
     {
         SqlCommand comando = new SqlCommand();
-
         public bool InsertarConsulta(Consulta consulta)
         {
             bool inserto = false;
@@ -48,7 +47,6 @@ namespace ClinicaDental.Modelos.DAO
 
             return inserto;
         }
-
         public bool ActualizarConsulta(Consulta consulta)
         {
             bool modifico = false;
@@ -86,7 +84,6 @@ namespace ClinicaDental.Modelos.DAO
             }
             return modifico;
         }
-
         public bool EliminarConsulta(int id)
         {
             bool elimino = false;
@@ -117,7 +114,6 @@ namespace ClinicaDental.Modelos.DAO
             }
             return elimino;
         }
-
         public DataTable GetConsultas()
         {
             DataTable consultasDT = new DataTable();
@@ -145,6 +141,32 @@ namespace ClinicaDental.Modelos.DAO
             }
 
             return consultasDT;
+        }
+        public decimal GetSubTotal(int Id)
+        {
+            decimal SubTotal = 0;
+            try
+            {
+                StringBuilder sql = new StringBuilder();
+                sql.Append(" SELECT S.COSTO FROM CONSULTA C ");
+                sql.Append(" JOIN SERVICIOS S ON S.ID = C.ID_SERVICIO ");
+                sql.Append(" WHERE C.ID = @Id");
+
+                comando.Connection = MiConexion;
+                MiConexion.Open();
+                comando.CommandType = System.Data.CommandType.Text;
+                comando.CommandText = sql.ToString();
+                comando.Parameters.Add("@Id", SqlDbType.Int).Value = Id;
+                SubTotal = Convert.ToDecimal(comando.ExecuteScalar());
+
+                comando.Parameters.Clear();
+                MiConexion.Close();
+            }
+            catch (Exception ex)
+            {
+                MiConexion.Close();
+            }
+            return SubTotal;
         }
     }
 }

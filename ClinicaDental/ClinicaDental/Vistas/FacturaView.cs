@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClinicaDental.Controladores;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace ClinicaDental.Vistas
         public FacturaView()
         {
             InitializeComponent();
+            FacturaController controlador = new FacturaController(this);
         }
     }
 }

@@ -59,18 +59,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controladores\ClienteController.cs" />
-    <Compile Include="Controladores\Clientes.cs" />
     <Compile Include="Controladores\ConsultaController.cs" />
+    <Compile Include="Controladores\FacturaController.cs" />
     <Compile Include="Controladores\LoginController.cs" />
     <Compile Include="Controladores\ServiciosController.cs" />
     <Compile Include="Controladores\UsuarioController.cs" />
     <Compile Include="Modelos\DAO\ClienteDAO.cs" />
     <Compile Include="Modelos\DAO\Conexion.cs" />
+    <Compile Include="Modelos\DAO\FacturaDAO.cs" />
     <Compile Include="Modelos\DAO\ServiciosDAO.cs" />
     <Compile Include="Modelos\DAO\UsuarioDAO.cs" />
     <Compile Include="Modelos\DAO\ConsultaDAO.cs" />
     <Compile Include="Modelos\Entidades\Cliente.cs" />
     <Compile Include="Modelos\Entidades\Consulta.cs" />
+    <Compile Include="Modelos\Entidades\Factura.cs" />
     <Compile Include="Modelos\Entidades\Servicios.cs" />
     <Compile Include="Modelos\Entidades\Usuario.cs" />
     <Compile Include="Program.cs" />
@@ -132,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\ConsultasView.resx">
       <DependentUpon>ConsultasView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FacturaView.resx">
+      <DependentUpon>FacturaView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\LoginView.resx">
       <DependentUpon>LoginView.cs</DependentUpon>
