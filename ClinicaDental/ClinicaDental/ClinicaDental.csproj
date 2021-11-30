@@ -182,5 +182,65 @@
   <ItemGroup>
     <None Include="Resources\consulta.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USUARIO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-11-29 at 20.59.54.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-11-29 at 21.23.11.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-11-29 at 21.45.08.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-11-29 at 21.45.081.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5252.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6363.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2323.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3232.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1010.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-11-29 at 22.01.14.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-11-29 at 22.03.10.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dentista %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dentista.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dentista3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nuevo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -18,5 +18,10 @@ namespace ClinicaDental.Vistas
             InitializeComponent();
             UsuarioController controller = new UsuarioController(this);
         }
+
+        private void UsuariosView_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -88,7 +88,7 @@ namespace ClinicaDental.Vistas
             // 
             // toolStripTabItem1
             // 
-            this.toolStripTabItem1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripTabItem1.Font = new System.Drawing.Font("Cooper Black", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripTabItem1.Name = "toolStripTabItem1";
             // 
             // ribbonControlAdv1.ribbonPanel1
@@ -99,7 +99,7 @@ namespace ClinicaDental.Vistas
             this.toolStripTabItem1.Panel.TabIndex = 2;
             this.toolStripTabItem1.Panel.Text = "Cliente";
             this.toolStripTabItem1.Position = 0;
-            this.toolStripTabItem1.Size = new System.Drawing.Size(67, 30);
+            this.toolStripTabItem1.Size = new System.Drawing.Size(73, 30);
             this.toolStripTabItem1.Tag = "1";
             this.toolStripTabItem1.Text = "Cliente";
             // 
@@ -136,7 +136,7 @@ namespace ClinicaDental.Vistas
             // 
             // toolStripTabItem2
             // 
-            this.toolStripTabItem2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripTabItem2.Font = new System.Drawing.Font("Cooper Black", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripTabItem2.Name = "toolStripTabItem2";
             // 
             // ribbonControlAdv1.ribbonPanel2
@@ -147,7 +147,7 @@ namespace ClinicaDental.Vistas
             this.toolStripTabItem2.Panel.TabIndex = 3;
             this.toolStripTabItem2.Panel.Text = "Servicio";
             this.toolStripTabItem2.Position = 1;
-            this.toolStripTabItem2.Size = new System.Drawing.Size(63, 30);
+            this.toolStripTabItem2.Size = new System.Drawing.Size(80, 30);
             this.toolStripTabItem2.Tag = "2";
             this.toolStripTabItem2.Text = "Servicio";
             // 
@@ -183,7 +183,7 @@ namespace ClinicaDental.Vistas
             // 
             // toolStripTabItem3
             // 
-            this.toolStripTabItem3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripTabItem3.Font = new System.Drawing.Font("Cooper Black", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripTabItem3.Name = "toolStripTabItem3";
             // 
             // ribbonControlAdv1.ribbonPanel3
@@ -194,7 +194,7 @@ namespace ClinicaDental.Vistas
             this.toolStripTabItem3.Panel.TabIndex = 4;
             this.toolStripTabItem3.Panel.Text = "Consulta";
             this.toolStripTabItem3.Position = 2;
-            this.toolStripTabItem3.Size = new System.Drawing.Size(69, 30);
+            this.toolStripTabItem3.Size = new System.Drawing.Size(83, 30);
             this.toolStripTabItem3.Tag = "3";
             this.toolStripTabItem3.Text = "Consulta";
             // 

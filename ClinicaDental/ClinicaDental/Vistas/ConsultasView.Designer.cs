@@ -58,17 +58,19 @@ namespace ClinicaDental.Vistas
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(99, 151);
+            this.label4.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label4.Location = new System.Drawing.Point(77, 130);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 13);
+            this.label4.Size = new System.Drawing.Size(78, 17);
             this.label4.TabIndex = 26;
             this.label4.Text = "CLIENTE";
             // 
             // UsuarioTextBox
             // 
             this.UsuarioTextBox.Enabled = false;
-            this.UsuarioTextBox.Location = new System.Drawing.Point(194, 101);
+            this.UsuarioTextBox.Location = new System.Drawing.Point(207, 80);
             this.UsuarioTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.UsuarioTextBox.Name = "UsuarioTextBox";
             this.UsuarioTextBox.Size = new System.Drawing.Size(330, 20);
@@ -77,16 +79,18 @@ namespace ClinicaDental.Vistas
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(99, 108);
+            this.label3.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label3.Location = new System.Drawing.Point(77, 87);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 13);
+            this.label3.Size = new System.Drawing.Size(84, 17);
             this.label3.TabIndex = 24;
             this.label3.Text = "USUARIO";
             // 
             // IdTextBox
             // 
-            this.IdTextBox.Location = new System.Drawing.Point(194, 64);
+            this.IdTextBox.Location = new System.Drawing.Point(207, 43);
             this.IdTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.IdTextBox.Name = "IdTextBox";
             this.IdTextBox.ReadOnly = true;
@@ -96,37 +100,43 @@ namespace ClinicaDental.Vistas
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(99, 67);
+            this.label1.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label1.Location = new System.Drawing.Point(77, 46);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 13);
+            this.label1.Size = new System.Drawing.Size(26, 17);
             this.label1.TabIndex = 20;
             this.label1.Text = "ID";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(586, 47);
+            this.label5.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label5.Location = new System.Drawing.Point(521, 43);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 13);
+            this.label5.Size = new System.Drawing.Size(63, 17);
             this.label5.TabIndex = 30;
             this.label5.Text = "FECHA";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(101, 196);
+            this.label6.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label6.Location = new System.Drawing.Point(79, 175);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 13);
+            this.label6.Size = new System.Drawing.Size(87, 17);
             this.label6.TabIndex = 28;
             this.label6.Text = "SERVICIO";
             // 
             // DescripcionTextBox
             // 
             this.DescripcionTextBox.Enabled = false;
-            this.DescripcionTextBox.Location = new System.Drawing.Point(194, 228);
+            this.DescripcionTextBox.Location = new System.Drawing.Point(207, 207);
             this.DescripcionTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.DescripcionTextBox.Multiline = true;
             this.DescripcionTextBox.Name = "DescripcionTextBox";
@@ -136,59 +146,76 @@ namespace ClinicaDental.Vistas
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(101, 235);
+            this.label8.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label8.Location = new System.Drawing.Point(79, 214);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(80, 13);
+            this.label8.Size = new System.Drawing.Size(120, 17);
             this.label8.TabIndex = 32;
             this.label8.Text = "DESCRIPCION";
             // 
             // CancelarButton
             // 
+            this.CancelarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.CancelarButton.Enabled = false;
-            this.CancelarButton.Location = new System.Drawing.Point(590, 298);
+            this.CancelarButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CancelarButton.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CancelarButton.Location = new System.Drawing.Point(524, 293);
             this.CancelarButton.Name = "CancelarButton";
             this.CancelarButton.Size = new System.Drawing.Size(93, 35);
             this.CancelarButton.TabIndex = 39;
             this.CancelarButton.Text = "Cancelar";
-            this.CancelarButton.UseVisualStyleBackColor = true;
+            this.CancelarButton.UseVisualStyleBackColor = false;
             // 
             // EliminarButton
             // 
-            this.EliminarButton.Location = new System.Drawing.Point(491, 298);
+            this.EliminarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.EliminarButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.EliminarButton.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EliminarButton.Location = new System.Drawing.Point(425, 293);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(93, 35);
             this.EliminarButton.TabIndex = 38;
             this.EliminarButton.Text = "Eliminar";
-            this.EliminarButton.UseVisualStyleBackColor = true;
+            this.EliminarButton.UseVisualStyleBackColor = false;
             // 
             // GuardarButton
             // 
+            this.GuardarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.GuardarButton.Enabled = false;
-            this.GuardarButton.Location = new System.Drawing.Point(392, 298);
+            this.GuardarButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.GuardarButton.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GuardarButton.Location = new System.Drawing.Point(326, 293);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(93, 35);
             this.GuardarButton.TabIndex = 37;
             this.GuardarButton.Text = "Guardar";
-            this.GuardarButton.UseVisualStyleBackColor = true;
+            this.GuardarButton.UseVisualStyleBackColor = false;
             // 
             // ModificarButton
             // 
-            this.ModificarButton.Location = new System.Drawing.Point(293, 298);
+            this.ModificarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.ModificarButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ModificarButton.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ModificarButton.Location = new System.Drawing.Point(227, 293);
             this.ModificarButton.Name = "ModificarButton";
             this.ModificarButton.Size = new System.Drawing.Size(93, 35);
             this.ModificarButton.TabIndex = 36;
             this.ModificarButton.Text = "Modificar";
-            this.ModificarButton.UseVisualStyleBackColor = true;
+            this.ModificarButton.UseVisualStyleBackColor = false;
             // 
             // NuevoButton
             // 
-            this.NuevoButton.Location = new System.Drawing.Point(194, 298);
+            this.NuevoButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.NuevoButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.NuevoButton.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NuevoButton.Location = new System.Drawing.Point(128, 293);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(93, 35);
             this.NuevoButton.TabIndex = 35;
             this.NuevoButton.Text = "Nuevo";
-            this.NuevoButton.UseVisualStyleBackColor = true;
+            this.NuevoButton.UseVisualStyleBackColor = false;
             // 
             // ConsultasDataGridView
             // 
@@ -196,14 +223,14 @@ namespace ClinicaDental.Vistas
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ConsultasDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.ConsultasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ConsultasDataGridView.Location = new System.Drawing.Point(-7, 353);
+            this.ConsultasDataGridView.Location = new System.Drawing.Point(-7, 349);
             this.ConsultasDataGridView.Name = "ConsultasDataGridView";
-            this.ConsultasDataGridView.Size = new System.Drawing.Size(864, 177);
+            this.ConsultasDataGridView.Size = new System.Drawing.Size(889, 181);
             this.ConsultasDataGridView.TabIndex = 40;
             // 
             // FechaDateTimePicker
             // 
-            this.FechaDateTimePicker.Location = new System.Drawing.Point(635, 44);
+            this.FechaDateTimePicker.Location = new System.Drawing.Point(591, 43);
             this.FechaDateTimePicker.Name = "FechaDateTimePicker";
             this.FechaDateTimePicker.Size = new System.Drawing.Size(192, 20);
             this.FechaDateTimePicker.TabIndex = 41;
@@ -211,17 +238,18 @@ namespace ClinicaDental.Vistas
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(370, 19);
+            this.label2.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label2.Location = new System.Drawing.Point(369, 8);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 25);
+            this.label2.Size = new System.Drawing.Size(115, 24);
             this.label2.TabIndex = 45;
             this.label2.Text = "Consultas";
             // 
             // ClientesComboBox
             // 
             this.ClientesComboBox.FormattingEnabled = true;
-            this.ClientesComboBox.Location = new System.Drawing.Point(195, 148);
+            this.ClientesComboBox.Location = new System.Drawing.Point(208, 127);
             this.ClientesComboBox.Name = "ClientesComboBox";
             this.ClientesComboBox.Size = new System.Drawing.Size(329, 21);
             this.ClientesComboBox.TabIndex = 46;
@@ -229,7 +257,7 @@ namespace ClinicaDental.Vistas
             // ServiciosComboBox
             // 
             this.ServiciosComboBox.FormattingEnabled = true;
-            this.ServiciosComboBox.Location = new System.Drawing.Point(195, 193);
+            this.ServiciosComboBox.Location = new System.Drawing.Point(208, 172);
             this.ServiciosComboBox.Name = "ServiciosComboBox";
             this.ServiciosComboBox.Size = new System.Drawing.Size(329, 21);
             this.ServiciosComboBox.TabIndex = 47;
@@ -240,18 +268,22 @@ namespace ClinicaDental.Vistas
             // 
             // ImprimirFacturaButton
             // 
-            this.ImprimirFacturaButton.Location = new System.Drawing.Point(689, 298);
+            this.ImprimirFacturaButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.ImprimirFacturaButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ImprimirFacturaButton.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ImprimirFacturaButton.Location = new System.Drawing.Point(623, 293);
             this.ImprimirFacturaButton.Name = "ImprimirFacturaButton";
-            this.ImprimirFacturaButton.Size = new System.Drawing.Size(93, 35);
+            this.ImprimirFacturaButton.Size = new System.Drawing.Size(162, 35);
             this.ImprimirFacturaButton.TabIndex = 48;
             this.ImprimirFacturaButton.Text = "Imprimir Factura";
-            this.ImprimirFacturaButton.UseVisualStyleBackColor = true;
+            this.ImprimirFacturaButton.UseVisualStyleBackColor = false;
             // 
             // ConsultasView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(856, 517);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.ClientSize = new System.Drawing.Size(881, 517);
             this.Controls.Add(this.ImprimirFacturaButton);
             this.Controls.Add(this.ServiciosComboBox);
             this.Controls.Add(this.ClientesComboBox);
