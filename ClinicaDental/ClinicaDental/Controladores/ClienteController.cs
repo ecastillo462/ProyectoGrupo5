@@ -33,27 +33,32 @@ namespace ClinicaDental.Controladores
         {
             if (clienteVista.NombreTextBox.Text == "")
             {
-                MessageBox.Show("Ingrese un nombre");
+                clienteVista.errorProvider1.SetError(clienteVista.NombreTextBox, "Ingrese un nombre");
+                clienteVista.NombreTextBox.Focus();
                 return;
             }
             if (clienteVista.EdadTextBox.Text == "")
             {
-                MessageBox.Show("Ingrese una edad");
+                clienteVista.errorProvider1.SetError(clienteVista.EdadTextBox, "Ingrese una edad");
+                clienteVista.EdadTextBox.Focus();
                 return;
             }
             if (clienteVista.GeneroComboBox.Text == "")
             {
-                MessageBox.Show("Ingrese un género");
+                clienteVista.errorProvider1.SetError(clienteVista.GeneroComboBox, "Seleccione un género");
+                clienteVista.GeneroComboBox.Focus();
                 return;
             }
             if (clienteVista.TelefonoTextBox.Text == "")
             {
-                MessageBox.Show("Ingrese un número de teléfono");
+                clienteVista.errorProvider1.SetError(clienteVista.TelefonoTextBox, "Ingrese un teléfono");
+                clienteVista.TelefonoTextBox.Focus();
                 return;
             }
             if (clienteVista.EmailTextBox.Text == "")
             {
-                MessageBox.Show("Ingrese un correo");
+                clienteVista.errorProvider1.SetError(clienteVista.EmailTextBox, "Ingrese un dirección de email");
+                clienteVista.EmailTextBox.Focus();
                 return;
             }
 

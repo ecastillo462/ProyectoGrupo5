@@ -29,6 +29,7 @@ namespace ClinicaDental.Vistas
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.CancelarButton = new System.Windows.Forms.Button();
             this.EliminarButton = new System.Windows.Forms.Button();
             this.IngresarButton = new System.Windows.Forms.Button();
@@ -48,7 +49,9 @@ namespace ClinicaDental.Vistas
             this.NombreTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ClientesDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // CancelarButton
@@ -252,6 +255,10 @@ namespace ClinicaDental.Vistas
             this.label8.TabIndex = 47;
             this.label8.Text = "Ficha del paciente";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // ClientesView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,6 +287,7 @@ namespace ClinicaDental.Vistas
             this.Name = "ClientesView";
             this.Text = "Clientes";
             ((System.ComponentModel.ISupportInitialize)(this.ClientesDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -305,5 +313,6 @@ namespace ClinicaDental.Vistas
         public System.Windows.Forms.ComboBox GeneroComboBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label8;
+        public System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
