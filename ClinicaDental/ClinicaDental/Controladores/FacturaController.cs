@@ -35,8 +35,8 @@ namespace ClinicaDental.Controladores
             DeshabilitarControles();
         }
         private void DescuentoTextBox_TextChanged(object sender, EventArgs e)
-       {
-            if(vista.DescuentoTextBox.Text != "" )
+        {
+            if (vista.DescuentoTextBox.Text != "" && Convert.ToDecimal(vista.DescuentoTextBox.Text) <= Convert.ToDecimal(vista.SubTotalTextBox.Text))
             {
                 vista.TotalTextBox.Text = ((Convert.ToDecimal(vista.SubTotalTextBox.Text) + Convert.ToDecimal(vista.IsvTextBox.Text)) - Convert.ToDecimal(vista.DescuentoTextBox.Text)).ToString();
             }
@@ -57,6 +57,12 @@ namespace ClinicaDental.Controladores
             if (vista.DescuentoTextBox.Text == "")
             {
                 vista.errorProvider1.SetError(vista.DescuentoTextBox, "Ingrese el descuento");
+                vista.DescuentoTextBox.Focus();
+                return;
+            }
+            if (Convert.ToDecimal(vista.DescuentoTextBox.Text) > Convert.ToDecimal(vista.SubTotalTextBox.Text))
+            {
+                vista.errorProvider1.SetError(vista.DescuentoTextBox, "El descuento debe ser menor que el subtotal ");
                 vista.DescuentoTextBox.Focus();
                 return;
             }
