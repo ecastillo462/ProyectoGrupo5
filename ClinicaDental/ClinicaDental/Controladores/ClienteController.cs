@@ -77,9 +77,9 @@ namespace ClinicaDental.Controladores
                 client.Telefono = clienteVista.TelefonoTextBox.Text;
                 client.Email = clienteVista.EmailTextBox.Text;
 
-                if (clienteVista.ImagenClienteButton.Image != null)
+                if (clienteVista.ClientePictureBox.Image != null)
                 {
-                    client.Imagen = ImageToByteArray(clienteVista.ImagenClienteButton.Image);
+                    client.Imagen = ImageToByteArray(clienteVista.ClientePictureBox.Image);
                 }
 
                 if (opcion == "Nuevo")
@@ -90,7 +90,8 @@ namespace ClinicaDental.Controladores
                     {
                         LimpiarControles();
                         DeshabilitarControles();
-                        ListarClientes(); 
+                        ListarClientes();
+                        client.Imagen = null;
                         MessageBox.Show("Paciente ingresado con éxito");
                     }
                     else
@@ -105,6 +106,7 @@ namespace ClinicaDental.Controladores
                     if (modifico)
                     {
                         DeshabilitarControles();
+                        client.Imagen = null;
                         MessageBox.Show("Paciente modificado exitosamente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         ListarClientes();
                         LimpiarControles();
@@ -134,6 +136,15 @@ namespace ClinicaDental.Controladores
                 clienteVista.TelefonoTextBox.Text = clienteVista.ClientesDataGridView.CurrentRow.Cells["TELEFONO"].Value.ToString();
                 clienteVista.EmailTextBox.Text = clienteVista.ClientesDataGridView.CurrentRow.Cells["EMAIL"].Value.ToString();
                 clienteVista.EdadTextBox.Text = clienteVista.ClientesDataGridView.CurrentRow.Cells["EDAD"].Value.ToString();
+
+                if (clienteVista.ClientesDataGridView.CurrentRow.Cells["IMAGEN"].Value != DBNull.Value)
+                {
+                    clienteVista.ClientePictureBox.Image = ByteArrayToImage((Byte[])clienteVista.ClientesDataGridView.CurrentRow.Cells["IMAGEN"].Value);
+                }
+                else
+                {
+                    clienteVista.ClientePictureBox.Image = null;
+                }
 
             }
             else
