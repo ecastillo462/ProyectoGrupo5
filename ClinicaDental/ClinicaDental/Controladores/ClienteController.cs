@@ -3,6 +3,8 @@ using ClinicaDental.Modelos.Entidades;
 using ClinicaDental.Vistas;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,12 +22,17 @@ namespace ClinicaDental.Controladores
         public ClienteController(ClientesView view)
         {
             clienteVista = view;
+
             clienteVista.NuevoButton.Click += new EventHandler(Nuevo);
             clienteVista.IngresarButton.Click += new EventHandler(InsertarCliente);
             clienteVista.ModificarButton.Click += new EventHandler(ModificarCliente);
+
             clienteVista.Load += new EventHandler(Load);
             clienteVista.EliminarButton.Click += new EventHandler(EliminarCliente);
             clienteVista.CancelarButton.Click += new EventHandler(Cancelar);
+
+            clienteVista.ImagenClienteButton.Click += new EventHandler(SeleccionarImagen);
+            clienteVista.CancelarClienteButton.Click += new EventHandler(RemoverImagen);
         }
 
 
@@ -151,6 +158,36 @@ namespace ClinicaDental.Controladores
             }
         }
 
+        private void RemoverImagen(object sender, EventArgs e)
+        {
+            clienteVista.ClientePictureBox.Image = null;
+            client.Imagen = null;
+        }
+        private void SeleccionarImagen(object sender, EventArgs e)
+        {
+            OpenFileDialog ventana = new OpenFileDialog();
+            ventana.Filter = "Image files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png) | *.jpg; *.jpeg; *.jpe; *.jfif; *.png";
+            ventana.Title = "Por favor selecciona una imagen";
+            if (ventana.ShowDialog() == DialogResult.OK)
+            {
+                clienteVista.ClientePictureBox.ImageLocation = ventana.FileName;
+                clienteVista.ClientePictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+
+        }
+        private byte[] ImageToByteArray(Image image)
+        {
+            MemoryStream ms = new MemoryStream();
+            image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+            return ms.ToArray();
+        }
+        private Image ByteArrayToImage(byte[] image)
+        {
+            MemoryStream ms = new MemoryStream(image);
+            Image i = Image.FromStream(ms);
+            return i;
+        }
+
         private void Nuevo(object sender, EventArgs e)
         {
             LimpiarControles();
@@ -193,6 +230,8 @@ namespace ClinicaDental.Controladores
             clienteVista.CancelarButton.Enabled = true;
             clienteVista.ModificarButton.Enabled = false;
             clienteVista.NuevoButton.Enabled = false;
+            clienteVista.ImagenClienteButton.Enabled = true;
+            clienteVista.CancelarClienteButton.Enabled = true;
         }
         private void DeshabilitarControles()
         {
@@ -206,6 +245,8 @@ namespace ClinicaDental.Controladores
             clienteVista.CancelarButton.Enabled = false;
             clienteVista.ModificarButton.Enabled = true;
             clienteVista.NuevoButton.Enabled = true;
+            clienteVista.ImagenClienteButton.Enabled = false;
+            clienteVista.CancelarClienteButton.Enabled = false;
         }
         private void LimpiarControles(object sender, EventArgs e)
         {

@@ -14,6 +14,7 @@ namespace ClinicaDental.Modelos.Entidades
         public string Genero { get; set; }
         public string Telefono { get; set; }
         public string Email { get; set; }
+        public byte[] Imagen { get; set; }
 
     }
 }

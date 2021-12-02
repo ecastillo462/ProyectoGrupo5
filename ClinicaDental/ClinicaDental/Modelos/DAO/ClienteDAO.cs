@@ -21,7 +21,7 @@ namespace ClinicaDental.Modelos.DAO
             {
                 StringBuilder sql = new StringBuilder();
                 sql.Append(" INSERT INTO CLIENTES ");
-                sql.Append(" VALUES (@Nombre, @Edad, @Genero, @Telefono, @Email); ");
+                sql.Append(" VALUES (@Nombre, @Edad, @Genero, @Telefono, @Email, @Foto); ");
 
                 comando.Connection = MiConexion;
                 MiConexion.Open();
@@ -34,8 +34,16 @@ namespace ClinicaDental.Modelos.DAO
                 comando.Parameters.Add("@Telefono", SqlDbType.NVarChar, 16).Value = client.Telefono;
                 comando.Parameters.Add("@Email", SqlDbType.NVarChar, 50).Value = client.Email;
 
-                comando.ExecuteNonQuery();
+                if (client.Imagen == null)
+                {
+                    comando.Parameters.Add("@Foto", SqlDbType.Image).Value = DBNull.Value;
+                }
+                else
+                {
+                    comando.Parameters.Add("@Foto", System.Data.SqlDbType.Image).Value = client.Imagen;
+                }
 
+                comando.ExecuteNonQuery();
                 comando.Parameters.Clear(); 
                 
                 MiConexion.Close();
