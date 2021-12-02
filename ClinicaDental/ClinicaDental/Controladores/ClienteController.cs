@@ -77,6 +77,11 @@ namespace ClinicaDental.Controladores
                 client.Telefono = clienteVista.TelefonoTextBox.Text;
                 client.Email = clienteVista.EmailTextBox.Text;
 
+                if (clienteVista.ImagenClienteButton.Image != null)
+                {
+                    client.Imagen = ImageToByteArray(clienteVista.ImagenClienteButton.Image);
+                }
+
                 if (opcion == "Nuevo")
                 {
                     bool inserto = clientDAO.InsertarCliente(client);
