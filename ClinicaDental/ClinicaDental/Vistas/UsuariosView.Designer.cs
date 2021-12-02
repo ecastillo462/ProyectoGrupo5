@@ -45,8 +45,13 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.NuevoButton = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.ImagenButton = new System.Windows.Forms.Button();
+            this.RemoverImagenButton = new System.Windows.Forms.Button();
+            this.ImagenPictureBox = new System.Windows.Forms.PictureBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.UsuariosDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // EmailTextBox
@@ -191,10 +196,11 @@
             // 
             this.UsuariosDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.UsuariosDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.UsuariosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.UsuariosDataGridView.Location = new System.Drawing.Point(-2, 278);
             this.UsuariosDataGridView.Name = "UsuariosDataGridView";
-            this.UsuariosDataGridView.Size = new System.Drawing.Size(714, 184);
+            this.UsuariosDataGridView.Size = new System.Drawing.Size(957, 184);
             this.UsuariosDataGridView.TabIndex = 35;
             // 
             // errorProvider1
@@ -224,12 +230,49 @@
             this.label5.TabIndex = 46;
             this.label5.Text = "Usuarios";
             // 
+            // ImagenButton
+            // 
+            this.ImagenButton.Enabled = false;
+            this.ImagenButton.Font = new System.Drawing.Font("Cooper Black", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ImagenButton.Location = new System.Drawing.Point(672, 183);
+            this.ImagenButton.Name = "ImagenButton";
+            this.ImagenButton.Size = new System.Drawing.Size(75, 23);
+            this.ImagenButton.TabIndex = 48;
+            this.ImagenButton.Text = "Imagen...";
+            this.toolTip1.SetToolTip(this.ImagenButton, "Agregar Imagen");
+            this.ImagenButton.UseVisualStyleBackColor = true;
+            // 
+            // RemoverImagenButton
+            // 
+            this.RemoverImagenButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.RemoverImagenButton.Enabled = false;
+            this.RemoverImagenButton.Image = global::ClinicaDental.Properties.Resources.remove;
+            this.RemoverImagenButton.Location = new System.Drawing.Point(822, 184);
+            this.RemoverImagenButton.Name = "RemoverImagenButton";
+            this.RemoverImagenButton.Size = new System.Drawing.Size(42, 35);
+            this.RemoverImagenButton.TabIndex = 49;
+            this.toolTip1.SetToolTip(this.RemoverImagenButton, "Remover Imagen");
+            this.RemoverImagenButton.UseVisualStyleBackColor = true;
+            // 
+            // ImagenPictureBox
+            // 
+            this.ImagenPictureBox.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.ImagenPictureBox.Location = new System.Drawing.Point(672, 21);
+            this.ImagenPictureBox.Name = "ImagenPictureBox";
+            this.ImagenPictureBox.Size = new System.Drawing.Size(192, 157);
+            this.ImagenPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ImagenPictureBox.TabIndex = 47;
+            this.ImagenPictureBox.TabStop = false;
+            // 
             // UsuariosView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(709, 460);
+            this.ClientSize = new System.Drawing.Size(952, 460);
+            this.Controls.Add(this.RemoverImagenButton);
+            this.Controls.Add(this.ImagenButton);
+            this.Controls.Add(this.ImagenPictureBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.UsuariosDataGridView);
             this.Controls.Add(this.CancelarButton);
@@ -250,6 +293,7 @@
             this.Load += new System.EventHandler(this.UsuariosView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.UsuariosDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -273,5 +317,9 @@
         public System.Windows.Forms.DataGridView UsuariosDataGridView;
         public System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Button ImagenButton;
+        public System.Windows.Forms.PictureBox ImagenPictureBox;
+        public System.Windows.Forms.Button RemoverImagenButton;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

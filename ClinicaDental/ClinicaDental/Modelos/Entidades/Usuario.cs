@@ -12,7 +12,7 @@ namespace ClinicaDental.Modelos.Entidades
         public string Nombre { get; set; }
         public string Email { get; set; }
         public string Clave { get; set; }
-        
+        public byte[] Imagen { get; set; }
 
     }
 }

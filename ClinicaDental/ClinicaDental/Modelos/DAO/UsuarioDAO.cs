@@ -46,7 +46,7 @@ namespace ClinicaDental.Modelos.DAO
             {
                 StringBuilder sql = new StringBuilder();
                 sql.Append(" INSERT INTO USUARIOS ");
-                sql.Append(" VALUES (@Nombre, @Email, @Clave); ");
+                sql.Append(" VALUES (@Nombre, @Email, @Clave, @Foto); ");
 
                 comando.Connection = MiConexion;
                 MiConexion.Open();
@@ -55,6 +55,16 @@ namespace ClinicaDental.Modelos.DAO
                 comando.Parameters.Add("@Nombre", SqlDbType.NVarChar, 80).Value = user.Nombre;
                 comando.Parameters.Add("@Email", SqlDbType.NVarChar, 50).Value = user.Email;
                 comando.Parameters.Add("@Clave", SqlDbType.NVarChar, 100).Value = EncriptarClave(user.Clave);
+
+                if (user.Imagen == null)
+                {
+                    comando.Parameters.Add("@Foto", SqlDbType.Image).Value = DBNull.Value;
+                }
+                else
+                {
+                    comando.Parameters.Add("@Foto", System.Data.SqlDbType.Image).Value = user.Imagen;
+                }
+
                 comando.ExecuteNonQuery();
                 MiConexion.Close();
                 comando.Parameters.Clear();
@@ -85,7 +95,7 @@ namespace ClinicaDental.Modelos.DAO
             try
             {
                 StringBuilder sql = new StringBuilder();
-                sql.Append(" SELECT NOMBRE, EMAIL FROM USUARIOS ");
+                sql.Append(" SELECT ID, NOMBRE, EMAIL, IMAGEN FROM USUARIOS ");
                 comando.Connection = MiConexion;
                 MiConexion.Open();
                 comando.CommandType = System.Data.CommandType.Text;
@@ -108,7 +118,7 @@ namespace ClinicaDental.Modelos.DAO
             {
                 StringBuilder sql = new StringBuilder();
                 sql.Append(" UPDATE USUARIOS ");
-                sql.Append(" SET NOMBRE = @Nombre, EMAIL = @Email, CLAVE = @Clave  ");
+                sql.Append(" SET NOMBRE = @Nombre, EMAIL = @Email, CLAVE = @Clave, IMAGEN = @Foto ");
                 sql.Append(" WHERE ID = @Id; ");
 
                 comando.Connection = MiConexion;
@@ -119,6 +129,16 @@ namespace ClinicaDental.Modelos.DAO
                 comando.Parameters.Add("@Nombre", SqlDbType.NVarChar, 80).Value = user.Nombre;
                 comando.Parameters.Add("@Email", SqlDbType.NVarChar, 50).Value = user.Email;
                 comando.Parameters.Add("@Clave", SqlDbType.NVarChar, 100).Value = EncriptarClave(user.Clave);
+
+                if (user.Imagen == null)
+                {
+                    comando.Parameters.Add("@Foto", SqlDbType.Image).Value = DBNull.Value;
+                }
+                else
+                {
+                    comando.Parameters.Add("@Foto", System.Data.SqlDbType.Image).Value = user.Imagen;
+                }
+
                 comando.ExecuteNonQuery();
                 modifico = true;
                 MiConexion.Close();
@@ -148,10 +168,11 @@ namespace ClinicaDental.Modelos.DAO
                 comando.Parameters.Add("@Id", SqlDbType.Int).Value = id;
                 comando.ExecuteNonQuery();
                 MiConexion.Close();
+                comando.Parameters.Clear(); 
                 modifico = true;
 
             }
-            catch (Exception )
+            catch (Exception ex)
             {
                 return modifico;
             }
