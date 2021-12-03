@@ -76,7 +76,7 @@ namespace ClinicaDental.Vistas
             this.ribbonControlAdv1.QuickPanelVisible = false;
             this.ribbonControlAdv1.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None;
             this.ribbonControlAdv1.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2016;
-            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem1;
+            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem3;
             this.ribbonControlAdv1.ShowRibbonDisplayOptionButton = true;
             this.ribbonControlAdv1.Size = new System.Drawing.Size(917, 145);
             this.ribbonControlAdv1.SystemText.QuickAccessDialogDropDownName = "Start menu";
@@ -129,8 +129,8 @@ namespace ClinicaDental.Vistas
             this.ClienteToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.ClienteToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ClienteToolStripButton.Name = "ClienteToolStripButton";
-            this.ClienteToolStripButton.Size = new System.Drawing.Size(108, 62);
-            this.ClienteToolStripButton.Text = "Tipo De Cliente";
+            this.ClienteToolStripButton.Size = new System.Drawing.Size(61, 62);
+            this.ClienteToolStripButton.Text = "Clientes";
             this.ClienteToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.ClienteToolStripButton.Click += new System.EventHandler(this.ClienteToolStripButton_Click);
             // 
@@ -223,8 +223,8 @@ namespace ClinicaDental.Vistas
             this.ConsultaToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.ConsultaToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ConsultaToolStripButton.Name = "ConsultaToolStripButton";
-            this.ConsultaToolStripButton.Size = new System.Drawing.Size(119, 62);
-            this.ConsultaToolStripButton.Text = "Tipo De Consulta";
+            this.ConsultaToolStripButton.Size = new System.Drawing.Size(72, 62);
+            this.ConsultaToolStripButton.Text = "Consultas";
             this.ConsultaToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.ConsultaToolStripButton.Click += new System.EventHandler(this.ConsultaToolStripButton_Click);
             // 

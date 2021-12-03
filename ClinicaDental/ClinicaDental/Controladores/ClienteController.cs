@@ -68,6 +68,17 @@ namespace ClinicaDental.Controladores
                 clienteVista.EmailTextBox.Focus();
                 return;
             }
+            
+            try
+            {
+                Convert.ToInt32(clienteVista.EdadTextBox.Text); 
+            }
+            catch (Exception)
+            {
+                clienteVista.errorProvider1.SetError(clienteVista.EdadTextBox, "Edad incorrecta");
+                clienteVista.TelefonoTextBox.Focus();
+                return;
+            } 
 
             try
             {
@@ -209,6 +220,7 @@ namespace ClinicaDental.Controladores
             LimpiarControles();
             HabilitarControles();
             opcion = "Nuevo";
+            clienteVista.NombreTextBox.Focus(); 
         }
         private void Load(object sender, EventArgs e)
         {
@@ -233,6 +245,8 @@ namespace ClinicaDental.Controladores
             clienteVista.GeneroComboBox.Text = string.Empty;
             clienteVista.TelefonoTextBox.Clear();
             clienteVista.EmailTextBox.Clear();
+            clienteVista.ClientePictureBox.Image = null;
+            clienteVista.errorProvider1.Clear(); 
         }
         private void HabilitarControles()
         {
@@ -264,14 +278,6 @@ namespace ClinicaDental.Controladores
             clienteVista.ImagenClienteButton.Enabled = false;
             clienteVista.CancelarClienteButton.Enabled = false;
         }
-        private void LimpiarControles(object sender, EventArgs e)
-        {
-            clienteVista.NombreTextBox.Clear();
-            clienteVista.EdadTextBox.Clear();
-            clienteVista.GeneroComboBox.Text = string.Empty;
-            clienteVista.TelefonoTextBox.Clear();
-            clienteVista.EmailTextBox.Clear();
-            clienteVista.IdTextBox.Text = string.Empty;
-        }
+        
     }
 }

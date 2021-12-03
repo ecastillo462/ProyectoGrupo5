@@ -91,7 +91,7 @@ namespace ClinicaDental.Modelos.DAO
             {
                 StringBuilder sql = new StringBuilder();
                 sql.Append(" UPDATE CLIENTES ");
-                sql.Append(" SET NOMBRE = @Nombre, EDAD = @Edad, GENERO = @Genero, TELEFONO = @Telefono, EMAIL = @Email  ");
+                sql.Append(" SET NOMBRE = @Nombre, EDAD = @Edad, GENERO = @Genero, TELEFONO = @Telefono, EMAIL = @Email, IMAGEN = @Foto ");
                 sql.Append(" WHERE ID = @Id; ");
 
                 comando.Connection = MiConexion;
@@ -105,7 +105,16 @@ namespace ClinicaDental.Modelos.DAO
                 comando.Parameters.Add("@Genero", SqlDbType.NVarChar, 20).Value = client.Genero;
                 comando.Parameters.Add("@Telefono", SqlDbType.NVarChar, 16).Value = client.Telefono;
                 comando.Parameters.Add("@Email", SqlDbType.NVarChar, 50).Value = client.Email;
-               
+
+                if (client.Imagen == null)
+                {
+                    comando.Parameters.Add("@Foto", SqlDbType.Image).Value = DBNull.Value;
+                }
+                else
+                {
+                    comando.Parameters.Add("@Foto", System.Data.SqlDbType.Image).Value = client.Imagen;
+                }
+
                 comando.ExecuteNonQuery();
 
                 comando.Parameters.Clear(); 
@@ -146,7 +155,7 @@ namespace ClinicaDental.Modelos.DAO
                 MiConexion.Close();
 
             }
-            catch (Exception )
+            catch (Exception ex)
             {
                 return modifico;
             }

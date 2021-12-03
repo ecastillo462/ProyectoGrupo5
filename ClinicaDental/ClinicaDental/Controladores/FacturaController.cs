@@ -36,6 +36,17 @@ namespace ClinicaDental.Controladores
         }
         private void DescuentoTextBox_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
+                Convert.ToDecimal(vista.DescuentoTextBox.Text);
+            }
+            catch
+            {
+                vista.errorProvider1.SetError(vista.DescuentoTextBox, "Descuento incorrecto");
+                vista.DescuentoTextBox.Focus();
+                return;
+            }
+
             if (vista.DescuentoTextBox.Text != "" && Convert.ToDecimal(vista.DescuentoTextBox.Text) <= Convert.ToDecimal(vista.SubTotalTextBox.Text))
             {
                 vista.TotalTextBox.Text = ((Convert.ToDecimal(vista.SubTotalTextBox.Text) + Convert.ToDecimal(vista.IsvTextBox.Text)) - Convert.ToDecimal(vista.DescuentoTextBox.Text)).ToString();
@@ -185,6 +196,7 @@ namespace ClinicaDental.Controladores
             vista.DescuentoTextBox.Clear();
             vista.IsvTextBox.Clear();
             vista.TotalTextBox.Clear();
+            vista.errorProvider1.Clear(); 
         }
     }
 }

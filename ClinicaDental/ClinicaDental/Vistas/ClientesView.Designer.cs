@@ -283,6 +283,7 @@ namespace ClinicaDental.Vistas
             this.ClientePictureBox.Location = new System.Drawing.Point(7, 21);
             this.ClientePictureBox.Name = "ClientePictureBox";
             this.ClientePictureBox.Size = new System.Drawing.Size(210, 152);
+            this.ClientePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.ClientePictureBox.TabIndex = 0;
             this.ClientePictureBox.TabStop = false;
             // 
@@ -345,6 +346,7 @@ namespace ClinicaDental.Vistas
             ((System.ComponentModel.ISupportInitialize)(this.ClientesDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ClientePictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

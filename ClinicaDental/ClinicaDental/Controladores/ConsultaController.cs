@@ -230,6 +230,7 @@ namespace ClinicaDental.Controladores
             VistaConsulta.ClientesComboBox.Text = "";
             VistaConsulta.ServiciosComboBox.Text = ""; 
             VistaConsulta.IdTextBox.Text = string.Empty;
+            VistaConsulta.errorProvider1.Clear(); 
         }
     }
 }

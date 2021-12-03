@@ -42,8 +42,10 @@ namespace ClinicaDental.Controladores
 
         private void Nuevo(object serder, EventArgs e)
         {
+            LimpiarControles(); 
             HabilitarControles();
             operacion = "Nuevo";
+            vista.NombreTextBox.Focus(); 
         }
 
         private void Guardar(object serder, EventArgs e)
@@ -63,6 +65,17 @@ namespace ClinicaDental.Controladores
             if (vista.CostoTextBox.Text == "")
             {
                 vista.errorProvider1.SetError(vista.CostoTextBox, "Ingrese un Costo");
+                vista.CostoTextBox.Focus();
+                return;
+            }
+
+            try
+            {
+                Convert.ToDecimal(vista.CostoTextBox.Text);
+            }
+            catch
+            {
+                vista.errorProvider1.SetError(vista.CostoTextBox, "Costo incorrecto");
                 vista.CostoTextBox.Focus();
                 return;
             }
@@ -184,6 +197,7 @@ namespace ClinicaDental.Controladores
             vista.NombreTextBox.Clear();
             vista.DescripcionTextBox.Clear();
             vista.CostoTextBox.Clear();
+            vista.errorProvider1.Clear();
         }
 
 
