@@ -80,6 +80,7 @@ namespace ClinicaDental.Modelos.DAO
             }
             catch (Exception e)
             {
+                MiConexion.Close(); 
                 return modifico;
             }
             return modifico;

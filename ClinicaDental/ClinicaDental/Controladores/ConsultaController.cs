@@ -225,7 +225,6 @@ namespace ClinicaDental.Controladores
         }
         private void LimpiarControles()
         {
-            VistaConsulta.UsuarioTextBox.Clear();
             VistaConsulta.DescripcionTextBox.Clear();
             VistaConsulta.ClientesComboBox.Text = "";
             VistaConsulta.ServiciosComboBox.Text = ""; 

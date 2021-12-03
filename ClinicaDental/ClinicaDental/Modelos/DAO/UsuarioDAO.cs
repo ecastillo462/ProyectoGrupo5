@@ -7,6 +7,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ClinicaDental.Modelos.DAO
 {
@@ -174,6 +175,8 @@ namespace ClinicaDental.Modelos.DAO
             }
             catch (Exception ex)
             {
+                MiConexion.Close();
+                MessageBox.Show("Ocurrió un error al intentar eliminar el usuario"); 
                 return modifico;
             }
             return modifico;

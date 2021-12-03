@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ClinicaDental.Modelos.DAO
 {
@@ -125,6 +126,8 @@ namespace ClinicaDental.Modelos.DAO
             }
             catch (Exception e)
             {
+                MiConexion.Close();
+                MessageBox.Show("Ocurrió un error al intentar eliminar la factura");
                 return elimino;
             }
             return elimino;
