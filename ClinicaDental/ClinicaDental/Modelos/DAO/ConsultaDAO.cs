@@ -40,8 +40,9 @@ namespace ClinicaDental.Modelos.DAO
                 MiConexion.Close();
                 inserto = true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                MiConexion.Close();
                 return inserto;
             }
 
@@ -109,8 +110,9 @@ namespace ClinicaDental.Modelos.DAO
                 MiConexion.Close();
 
             }
-            catch (Exception e)
+            catch (Exception )
             {
+
                 return elimino;
             }
             return elimino;

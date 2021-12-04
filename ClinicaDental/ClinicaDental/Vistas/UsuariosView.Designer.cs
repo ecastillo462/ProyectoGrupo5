@@ -200,7 +200,7 @@
             this.UsuariosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.UsuariosDataGridView.Location = new System.Drawing.Point(-2, 278);
             this.UsuariosDataGridView.Name = "UsuariosDataGridView";
-            this.UsuariosDataGridView.Size = new System.Drawing.Size(957, 184);
+            this.UsuariosDataGridView.Size = new System.Drawing.Size(975, 184);
             this.UsuariosDataGridView.TabIndex = 35;
             // 
             // errorProvider1
@@ -269,7 +269,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(952, 460);
+            this.ClientSize = new System.Drawing.Size(970, 460);
             this.Controls.Add(this.RemoverImagenButton);
             this.Controls.Add(this.ImagenButton);
             this.Controls.Add(this.ImagenPictureBox);

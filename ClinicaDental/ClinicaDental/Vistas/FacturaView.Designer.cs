@@ -54,11 +54,12 @@
             // 
             // IdTextBox
             // 
-            this.IdTextBox.Location = new System.Drawing.Point(253, 51);
-            this.IdTextBox.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.IdTextBox.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IdTextBox.Location = new System.Drawing.Point(278, 48);
+            this.IdTextBox.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.IdTextBox.Name = "IdTextBox";
             this.IdTextBox.ReadOnly = true;
-            this.IdTextBox.Size = new System.Drawing.Size(137, 26);
+            this.IdTextBox.Size = new System.Drawing.Size(150, 25);
             this.IdTextBox.TabIndex = 47;
             // 
             // label1
@@ -66,8 +67,8 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(117, 56);
-            this.label1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.label1.Location = new System.Drawing.Point(129, 53);
+            this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(26, 17);
             this.label1.TabIndex = 46;
@@ -75,11 +76,12 @@
             // 
             // TotalTextBox
             // 
-            this.TotalTextBox.Location = new System.Drawing.Point(253, 246);
-            this.TotalTextBox.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.TotalTextBox.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalTextBox.Location = new System.Drawing.Point(278, 234);
+            this.TotalTextBox.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.TotalTextBox.Name = "TotalTextBox";
             this.TotalTextBox.ReadOnly = true;
-            this.TotalTextBox.Size = new System.Drawing.Size(340, 26);
+            this.TotalTextBox.Size = new System.Drawing.Size(374, 25);
             this.TotalTextBox.TabIndex = 50;
             // 
             // label3
@@ -87,8 +89,8 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label3.Location = new System.Drawing.Point(117, 251);
-            this.label3.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.label3.Location = new System.Drawing.Point(129, 238);
+            this.label3.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 17);
             this.label3.TabIndex = 49;
@@ -96,11 +98,12 @@
             // 
             // IsvTextBox
             // 
-            this.IsvTextBox.Location = new System.Drawing.Point(253, 203);
-            this.IsvTextBox.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.IsvTextBox.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IsvTextBox.Location = new System.Drawing.Point(278, 193);
+            this.IsvTextBox.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.IsvTextBox.Name = "IsvTextBox";
             this.IsvTextBox.ReadOnly = true;
-            this.IsvTextBox.Size = new System.Drawing.Size(340, 26);
+            this.IsvTextBox.Size = new System.Drawing.Size(374, 25);
             this.IsvTextBox.TabIndex = 52;
             // 
             // label4
@@ -108,8 +111,8 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label4.Location = new System.Drawing.Point(117, 208);
-            this.label4.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.label4.Location = new System.Drawing.Point(129, 198);
+            this.label4.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(36, 17);
             this.label4.TabIndex = 51;
@@ -117,11 +120,12 @@
             // 
             // SubTotalTextBox
             // 
-            this.SubTotalTextBox.Location = new System.Drawing.Point(253, 127);
-            this.SubTotalTextBox.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.SubTotalTextBox.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubTotalTextBox.Location = new System.Drawing.Point(278, 121);
+            this.SubTotalTextBox.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.SubTotalTextBox.Name = "SubTotalTextBox";
             this.SubTotalTextBox.ReadOnly = true;
-            this.SubTotalTextBox.Size = new System.Drawing.Size(340, 26);
+            this.SubTotalTextBox.Size = new System.Drawing.Size(374, 25);
             this.SubTotalTextBox.TabIndex = 54;
             // 
             // label5
@@ -129,8 +133,8 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label5.Location = new System.Drawing.Point(117, 132);
-            this.label5.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.label5.Location = new System.Drawing.Point(129, 125);
+            this.label5.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(97, 17);
             this.label5.TabIndex = 53;
@@ -142,9 +146,9 @@
             this.CancelarButton.Enabled = false;
             this.CancelarButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CancelarButton.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CancelarButton.Location = new System.Drawing.Point(483, 293);
+            this.CancelarButton.Location = new System.Drawing.Point(531, 278);
             this.CancelarButton.Name = "CancelarButton";
-            this.CancelarButton.Size = new System.Drawing.Size(93, 35);
+            this.CancelarButton.Size = new System.Drawing.Size(102, 33);
             this.CancelarButton.TabIndex = 59;
             this.CancelarButton.Text = "Cancelar";
             this.CancelarButton.UseVisualStyleBackColor = false;
@@ -154,9 +158,9 @@
             this.EliminarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.EliminarButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.EliminarButton.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EliminarButton.Location = new System.Drawing.Point(384, 293);
+            this.EliminarButton.Location = new System.Drawing.Point(422, 278);
             this.EliminarButton.Name = "EliminarButton";
-            this.EliminarButton.Size = new System.Drawing.Size(93, 35);
+            this.EliminarButton.Size = new System.Drawing.Size(102, 33);
             this.EliminarButton.TabIndex = 58;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.UseVisualStyleBackColor = false;
@@ -167,9 +171,9 @@
             this.GuardarButton.Enabled = false;
             this.GuardarButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.GuardarButton.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GuardarButton.Location = new System.Drawing.Point(285, 293);
+            this.GuardarButton.Location = new System.Drawing.Point(314, 278);
             this.GuardarButton.Name = "GuardarButton";
-            this.GuardarButton.Size = new System.Drawing.Size(93, 35);
+            this.GuardarButton.Size = new System.Drawing.Size(102, 33);
             this.GuardarButton.TabIndex = 57;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.UseVisualStyleBackColor = false;
@@ -179,9 +183,9 @@
             this.ModificarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ModificarButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ModificarButton.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ModificarButton.Location = new System.Drawing.Point(186, 293);
+            this.ModificarButton.Location = new System.Drawing.Point(205, 278);
             this.ModificarButton.Name = "ModificarButton";
-            this.ModificarButton.Size = new System.Drawing.Size(93, 35);
+            this.ModificarButton.Size = new System.Drawing.Size(102, 33);
             this.ModificarButton.TabIndex = 56;
             this.ModificarButton.Text = "Modificar";
             this.ModificarButton.UseVisualStyleBackColor = false;
@@ -192,17 +196,18 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.FacturasDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.FacturasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.FacturasDataGridView.Location = new System.Drawing.Point(0, 347);
+            this.FacturasDataGridView.Location = new System.Drawing.Point(0, 330);
             this.FacturasDataGridView.Name = "FacturasDataGridView";
-            this.FacturasDataGridView.Size = new System.Drawing.Size(728, 316);
+            this.FacturasDataGridView.Size = new System.Drawing.Size(801, 300);
             this.FacturasDataGridView.TabIndex = 62;
             // 
             // DescuentoTextBox
             // 
-            this.DescuentoTextBox.Location = new System.Drawing.Point(253, 165);
-            this.DescuentoTextBox.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.DescuentoTextBox.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DescuentoTextBox.Location = new System.Drawing.Point(278, 157);
+            this.DescuentoTextBox.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.DescuentoTextBox.Name = "DescuentoTextBox";
-            this.DescuentoTextBox.Size = new System.Drawing.Size(340, 26);
+            this.DescuentoTextBox.Size = new System.Drawing.Size(374, 25);
             this.DescuentoTextBox.TabIndex = 64;
             // 
             // label6
@@ -210,8 +215,8 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label6.Location = new System.Drawing.Point(117, 170);
-            this.label6.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.label6.Location = new System.Drawing.Point(129, 162);
+            this.label6.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(108, 17);
             this.label6.TabIndex = 63;
@@ -223,11 +228,12 @@
             // 
             // IdConsultaTextBox
             // 
-            this.IdConsultaTextBox.Location = new System.Drawing.Point(253, 89);
-            this.IdConsultaTextBox.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.IdConsultaTextBox.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IdConsultaTextBox.Location = new System.Drawing.Point(278, 85);
+            this.IdConsultaTextBox.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.IdConsultaTextBox.Name = "IdConsultaTextBox";
             this.IdConsultaTextBox.ReadOnly = true;
-            this.IdConsultaTextBox.Size = new System.Drawing.Size(137, 26);
+            this.IdConsultaTextBox.Size = new System.Drawing.Size(150, 25);
             this.IdConsultaTextBox.TabIndex = 66;
             // 
             // label7
@@ -235,8 +241,8 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label7.Location = new System.Drawing.Point(117, 94);
-            this.label7.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.label7.Location = new System.Drawing.Point(129, 89);
+            this.label7.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(120, 17);
             this.label7.TabIndex = 65;
@@ -247,7 +253,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label8.Location = new System.Drawing.Point(313, 9);
+            this.label8.Location = new System.Drawing.Point(344, 9);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(104, 24);
             this.label8.TabIndex = 67;
@@ -255,10 +261,10 @@
             // 
             // FacturaView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(725, 505);
+            this.ClientSize = new System.Drawing.Size(798, 480);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.IdConsultaTextBox);
             this.Controls.Add(this.label7);
@@ -277,8 +283,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.IdTextBox);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5);
+            this.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "FacturaView";
             this.Text = "Factura";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

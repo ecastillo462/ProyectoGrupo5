@@ -50,13 +50,11 @@ namespace ClinicaDental.Vistas
             this.label2 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.ClientePictureBox = new System.Windows.Forms.PictureBox();
             this.ImagenClienteButton = new System.Windows.Forms.Button();
             this.CancelarClienteButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ClientesDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ClientePictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -130,12 +128,12 @@ namespace ClinicaDental.Vistas
             this.ClientesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ClientesDataGridView.Location = new System.Drawing.Point(-6, 326);
             this.ClientesDataGridView.Name = "ClientesDataGridView";
-            this.ClientesDataGridView.Size = new System.Drawing.Size(811, 203);
+            this.ClientesDataGridView.Size = new System.Drawing.Size(817, 203);
             this.ClientesDataGridView.TabIndex = 45;
             // 
             // IdTextBox
             // 
-            this.IdTextBox.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IdTextBox.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IdTextBox.Location = new System.Drawing.Point(171, 54);
             this.IdTextBox.Name = "IdTextBox";
             this.IdTextBox.ReadOnly = true;
@@ -155,7 +153,7 @@ namespace ClinicaDental.Vistas
             // 
             // EmailTextBox
             // 
-            this.EmailTextBox.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmailTextBox.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmailTextBox.Location = new System.Drawing.Point(171, 223);
             this.EmailTextBox.Name = "EmailTextBox";
             this.EmailTextBox.Size = new System.Drawing.Size(292, 25);
@@ -174,7 +172,7 @@ namespace ClinicaDental.Vistas
             // 
             // TelefonoTextBox
             // 
-            this.TelefonoTextBox.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TelefonoTextBox.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TelefonoTextBox.Location = new System.Drawing.Point(171, 190);
             this.TelefonoTextBox.Name = "TelefonoTextBox";
             this.TelefonoTextBox.Size = new System.Drawing.Size(292, 25);
@@ -193,13 +191,14 @@ namespace ClinicaDental.Vistas
             // 
             // GeneroComboBox
             // 
+            this.GeneroComboBox.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GeneroComboBox.FormattingEnabled = true;
             this.GeneroComboBox.Items.AddRange(new object[] {
             "Femenino",
             "Masculino"});
             this.GeneroComboBox.Location = new System.Drawing.Point(171, 158);
             this.GeneroComboBox.Name = "GeneroComboBox";
-            this.GeneroComboBox.Size = new System.Drawing.Size(292, 21);
+            this.GeneroComboBox.Size = new System.Drawing.Size(292, 25);
             this.GeneroComboBox.TabIndex = 6;
             // 
             // label4
@@ -226,7 +225,7 @@ namespace ClinicaDental.Vistas
             // 
             // EdadTextBox
             // 
-            this.EdadTextBox.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EdadTextBox.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EdadTextBox.Location = new System.Drawing.Point(171, 124);
             this.EdadTextBox.Name = "EdadTextBox";
             this.EdadTextBox.Size = new System.Drawing.Size(292, 25);
@@ -234,7 +233,7 @@ namespace ClinicaDental.Vistas
             // 
             // NombreTextBox
             // 
-            this.NombreTextBox.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NombreTextBox.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NombreTextBox.Location = new System.Drawing.Point(171, 90);
             this.NombreTextBox.Name = "NombreTextBox";
             this.NombreTextBox.Size = new System.Drawing.Size(292, 25);
@@ -266,22 +265,10 @@ namespace ClinicaDental.Vistas
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.ClientePictureBox);
-            this.groupBox1.Font = new System.Drawing.Font("Cooper Black", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox1.Location = new System.Drawing.Point(547, 21);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(223, 188);
-            this.groupBox1.TabIndex = 48;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Imagen del Paciente";
-            // 
             // ClientePictureBox
             // 
-            this.ClientePictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientePictureBox.Location = new System.Drawing.Point(7, 21);
+            this.ClientePictureBox.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.ClientePictureBox.Location = new System.Drawing.Point(547, 43);
             this.ClientePictureBox.Name = "ClientePictureBox";
             this.ClientePictureBox.Size = new System.Drawing.Size(210, 152);
             this.ClientePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -293,12 +280,12 @@ namespace ClinicaDental.Vistas
             this.ImagenClienteButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ImagenClienteButton.Enabled = false;
             this.ImagenClienteButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.ImagenClienteButton.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ImagenClienteButton.Location = new System.Drawing.Point(547, 215);
+            this.ImagenClienteButton.Font = new System.Drawing.Font("Cooper Black", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ImagenClienteButton.Location = new System.Drawing.Point(547, 201);
             this.ImagenClienteButton.Name = "ImagenClienteButton";
-            this.ImagenClienteButton.Size = new System.Drawing.Size(109, 33);
+            this.ImagenClienteButton.Size = new System.Drawing.Size(80, 23);
             this.ImagenClienteButton.TabIndex = 49;
-            this.ImagenClienteButton.Text = "Buscar imagen";
+            this.ImagenClienteButton.Text = "Imagen...";
             this.ImagenClienteButton.UseVisualStyleBackColor = false;
             // 
             // CancelarClienteButton
@@ -308,7 +295,7 @@ namespace ClinicaDental.Vistas
             this.CancelarClienteButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CancelarClienteButton.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CancelarClienteButton.Image = global::ClinicaDental.Properties.Resources.remove;
-            this.CancelarClienteButton.Location = new System.Drawing.Point(709, 215);
+            this.CancelarClienteButton.Location = new System.Drawing.Point(702, 201);
             this.CancelarClienteButton.Name = "CancelarClienteButton";
             this.CancelarClienteButton.Size = new System.Drawing.Size(55, 33);
             this.CancelarClienteButton.TabIndex = 50;
@@ -319,10 +306,10 @@ namespace ClinicaDental.Vistas
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(800, 521);
+            this.ClientSize = new System.Drawing.Size(806, 521);
+            this.Controls.Add(this.ClientePictureBox);
             this.Controls.Add(this.CancelarClienteButton);
             this.Controls.Add(this.ImagenClienteButton);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.IdTextBox);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -346,8 +333,6 @@ namespace ClinicaDental.Vistas
             this.Text = "Clientes";
             ((System.ComponentModel.ISupportInitialize)(this.ClientesDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ClientePictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -375,7 +360,6 @@ namespace ClinicaDental.Vistas
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label8;
         public System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.GroupBox groupBox1;
         public System.Windows.Forms.PictureBox ClientePictureBox;
         public System.Windows.Forms.Button ImagenClienteButton;
         public System.Windows.Forms.Button CancelarClienteButton;

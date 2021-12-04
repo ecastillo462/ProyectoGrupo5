@@ -70,10 +70,11 @@ namespace ClinicaDental.Vistas
             // UsuarioTextBox
             // 
             this.UsuarioTextBox.Enabled = false;
+            this.UsuarioTextBox.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsuarioTextBox.Location = new System.Drawing.Point(207, 80);
             this.UsuarioTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.UsuarioTextBox.Name = "UsuarioTextBox";
-            this.UsuarioTextBox.Size = new System.Drawing.Size(330, 20);
+            this.UsuarioTextBox.Size = new System.Drawing.Size(330, 25);
             this.UsuarioTextBox.TabIndex = 25;
             // 
             // label3
@@ -90,11 +91,12 @@ namespace ClinicaDental.Vistas
             // 
             // IdTextBox
             // 
+            this.IdTextBox.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IdTextBox.Location = new System.Drawing.Point(207, 43);
             this.IdTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.IdTextBox.Name = "IdTextBox";
             this.IdTextBox.ReadOnly = true;
-            this.IdTextBox.Size = new System.Drawing.Size(132, 20);
+            this.IdTextBox.Size = new System.Drawing.Size(175, 25);
             this.IdTextBox.TabIndex = 21;
             // 
             // label1
@@ -136,6 +138,7 @@ namespace ClinicaDental.Vistas
             // DescripcionTextBox
             // 
             this.DescripcionTextBox.Enabled = false;
+            this.DescripcionTextBox.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DescripcionTextBox.Location = new System.Drawing.Point(207, 207);
             this.DescripcionTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.DescripcionTextBox.Multiline = true;
@@ -225,14 +228,15 @@ namespace ClinicaDental.Vistas
             this.ConsultasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ConsultasDataGridView.Location = new System.Drawing.Point(-7, 349);
             this.ConsultasDataGridView.Name = "ConsultasDataGridView";
-            this.ConsultasDataGridView.Size = new System.Drawing.Size(889, 181);
+            this.ConsultasDataGridView.Size = new System.Drawing.Size(1054, 181);
             this.ConsultasDataGridView.TabIndex = 40;
             // 
             // FechaDateTimePicker
             // 
+            this.FechaDateTimePicker.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FechaDateTimePicker.Location = new System.Drawing.Point(591, 43);
             this.FechaDateTimePicker.Name = "FechaDateTimePicker";
-            this.FechaDateTimePicker.Size = new System.Drawing.Size(192, 20);
+            this.FechaDateTimePicker.Size = new System.Drawing.Size(283, 25);
             this.FechaDateTimePicker.TabIndex = 41;
             // 
             // label2
@@ -248,18 +252,20 @@ namespace ClinicaDental.Vistas
             // 
             // ClientesComboBox
             // 
+            this.ClientesComboBox.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClientesComboBox.FormattingEnabled = true;
             this.ClientesComboBox.Location = new System.Drawing.Point(208, 127);
             this.ClientesComboBox.Name = "ClientesComboBox";
-            this.ClientesComboBox.Size = new System.Drawing.Size(329, 21);
+            this.ClientesComboBox.Size = new System.Drawing.Size(329, 25);
             this.ClientesComboBox.TabIndex = 46;
             // 
             // ServiciosComboBox
             // 
+            this.ServiciosComboBox.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ServiciosComboBox.FormattingEnabled = true;
             this.ServiciosComboBox.Location = new System.Drawing.Point(208, 172);
             this.ServiciosComboBox.Name = "ServiciosComboBox";
-            this.ServiciosComboBox.Size = new System.Drawing.Size(329, 21);
+            this.ServiciosComboBox.Size = new System.Drawing.Size(329, 25);
             this.ServiciosComboBox.TabIndex = 47;
             // 
             // errorProvider1
@@ -283,7 +289,7 @@ namespace ClinicaDental.Vistas
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(881, 517);
+            this.ClientSize = new System.Drawing.Size(920, 517);
             this.Controls.Add(this.ImprimirFacturaButton);
             this.Controls.Add(this.ServiciosComboBox);
             this.Controls.Add(this.ClientesComboBox);

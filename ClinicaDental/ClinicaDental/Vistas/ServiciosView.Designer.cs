@@ -53,11 +53,11 @@ namespace ClinicaDental.Vistas
             // NombreTextBox
             // 
             this.NombreTextBox.Enabled = false;
-            this.NombreTextBox.Font = new System.Drawing.Font("Cooper Black", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NombreTextBox.Location = new System.Drawing.Point(305, 107);
-            this.NombreTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.NombreTextBox.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NombreTextBox.Location = new System.Drawing.Point(305, 97);
+            this.NombreTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NombreTextBox.Name = "NombreTextBox";
-            this.NombreTextBox.Size = new System.Drawing.Size(364, 20);
+            this.NombreTextBox.Size = new System.Drawing.Size(382, 25);
             this.NombreTextBox.TabIndex = 9;
             // 
             // label2
@@ -65,7 +65,7 @@ namespace ClinicaDental.Vistas
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label2.Location = new System.Drawing.Point(87, 110);
+            this.label2.Location = new System.Drawing.Point(87, 100);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(197, 17);
@@ -74,12 +74,12 @@ namespace ClinicaDental.Vistas
             // 
             // IdTextBox
             // 
-            this.IdTextBox.Font = new System.Drawing.Font("Cooper Black", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IdTextBox.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IdTextBox.Location = new System.Drawing.Point(305, 57);
-            this.IdTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.IdTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.IdTextBox.Name = "IdTextBox";
             this.IdTextBox.ReadOnly = true;
-            this.IdTextBox.Size = new System.Drawing.Size(132, 20);
+            this.IdTextBox.Size = new System.Drawing.Size(132, 25);
             this.IdTextBox.TabIndex = 7;
             // 
             // label1
@@ -97,12 +97,12 @@ namespace ClinicaDental.Vistas
             // DescripcionTextBox
             // 
             this.DescripcionTextBox.Enabled = false;
-            this.DescripcionTextBox.Font = new System.Drawing.Font("Cooper Black", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DescripcionTextBox.Location = new System.Drawing.Point(305, 144);
-            this.DescripcionTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.DescripcionTextBox.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DescripcionTextBox.Location = new System.Drawing.Point(305, 137);
+            this.DescripcionTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DescripcionTextBox.Multiline = true;
             this.DescripcionTextBox.Name = "DescripcionTextBox";
-            this.DescripcionTextBox.Size = new System.Drawing.Size(364, 43);
+            this.DescripcionTextBox.Size = new System.Drawing.Size(382, 57);
             this.DescripcionTextBox.TabIndex = 11;
             // 
             // label3
@@ -110,7 +110,7 @@ namespace ClinicaDental.Vistas
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label3.Location = new System.Drawing.Point(87, 161);
+            this.label3.Location = new System.Drawing.Point(87, 144);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(120, 17);
@@ -120,11 +120,11 @@ namespace ClinicaDental.Vistas
             // CostoTextBox
             // 
             this.CostoTextBox.Enabled = false;
-            this.CostoTextBox.Font = new System.Drawing.Font("Cooper Black", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CostoTextBox.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CostoTextBox.Location = new System.Drawing.Point(305, 202);
-            this.CostoTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.CostoTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CostoTextBox.Name = "CostoTextBox";
-            this.CostoTextBox.Size = new System.Drawing.Size(364, 20);
+            this.CostoTextBox.Size = new System.Drawing.Size(382, 25);
             this.CostoTextBox.TabIndex = 13;
             // 
             // label4
@@ -209,7 +209,7 @@ namespace ClinicaDental.Vistas
             this.ServiciosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ServiciosDataGridView.Location = new System.Drawing.Point(-1, 288);
             this.ServiciosDataGridView.Name = "ServiciosDataGridView";
-            this.ServiciosDataGridView.Size = new System.Drawing.Size(729, 172);
+            this.ServiciosDataGridView.Size = new System.Drawing.Size(791, 172);
             this.ServiciosDataGridView.TabIndex = 30;
             // 
             // errorProvider1
@@ -232,7 +232,7 @@ namespace ClinicaDental.Vistas
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(726, 459);
+            this.ClientSize = new System.Drawing.Size(788, 459);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.ServiciosDataGridView);
             this.Controls.Add(this.CancelarButton);
